@@ -27,6 +27,9 @@ This module provides utility functions to create a stream that wraps a `Writable
 representing a parser. Events are captured and written to the stream in a manner which respects
 back-pressure.
 
+Supports:
+ - [sax][2]
+
 [1]: https://nodejs.org/docs/latest-v18.x/api/stream.html#class-streamtransform
 [2]: https://www.npmjs.com/package/sax
 [3]: https://www.npmjs.com/package/parse5-sax-parser

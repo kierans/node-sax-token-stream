@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE books SYSTEM "books.dtd">
+<books xmlns:test="http://example.org/test">
+	<!-- This is a comment -->
+	<category
+		title="More than 100 million copies sold"
+	>
+		<book
+			title="A Tale of Two Cities"
+			author="Charles Dickens"
+		>
+			<sales-volume><![CDATA[> 200 million]]></sales-volume>
+		</book>
+		<book
+			title="The Little Prince"
+			author="Antoine de Saint-Exupéry"
+		>
+			<sales-volume>200 million</sales-volume>
+		</book>
+		<book
+			title="The Hobbit"
+			author="J.R.R. Tolkien"
+		>
+			<sales-volume>100 million</sales-volume>
+		</book>
+		<book
+			title="Alice's Adventures in Wonderland"
+			author="Lewis Carroll"
+		>
+			<sales-volume>100 million</sales-volume>
+		</book>
+		<test:script>
+			<![CDATA[
+				console.log('hello');
+			]]>
+		</test:script>
+	</category>
+</books>
