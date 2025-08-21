@@ -1,0 +1,41 @@
+{
+  "name": "sax-token-stream",
+  "version": "0.1.0",
+  "description": "A Node.js Transform stream that pipes tokens from a SAX style parser",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kierans/node-sax-token-stream.git"
+  },
+  "keywords": [
+    "html",
+    "sax",
+    "xml"
+  ],
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "author": "Kieran Simpson <kierans777@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kierans/node-sax-token-stream/issues"
+  },
+  "homepage": "https://github.com/kierans/node-sax-token-streamm#readme",
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "hamjest": "^4.1.0",
+    "mocha": "^11.7.1",
+    "sax": "^1.4.1"
+  },
+  "peerDependencies": {
+    "sax": "^1.4.1"
+  },
+  "dependencies": {
+    "tokenising-stream": "^0.3.0"
+  }
+}
