@@ -1,5 +1,4 @@
 import { EventEmitter } from 'events';
-import { Writable } from 'stream';
 
 /**
  * Token representing an XML attribute
@@ -169,7 +168,7 @@ export type SAXToken =
  */
 export default class SAXEventAdaptor extends EventEmitter {
   /**
-   * @param {Writable} delegate
+   * @param {EventEmitter} delegate
    */
-  constructor(delegate: Writable);
+  constructor(delegate: EventEmitter);
 }
