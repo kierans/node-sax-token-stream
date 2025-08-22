@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "scripts": {
-    "docs": "jsdoc -r src -d docs -R README.md",
+    "docs": "jsdoc -c jsdoc.conf.json -r src -d docs -R README.md",
     "test": "mocha test"
   },
   "repository": {
