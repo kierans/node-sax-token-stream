@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "description": "A Node.js Transform stream that pipes tokens from a SAX style parser",
   "main": "src/index.js",
+  "type": "module",
   "types": "src/index.d.ts",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "scripts": {
     "docs": "jsdoc -c jsdoc.conf.json -r src -d docs -R README.md",
     "test": "mocha test"

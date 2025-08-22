@@ -1,15 +1,16 @@
 "use strict";
 
-const fs = require("node:fs");
-const path = require("node:path");
-const { Writable } = require("stream");
-const { pipeline } = require("node:stream/promises");
+import fs from "node:fs";
+import path from "node:path";
+import url from "node:url";
+import { Writable } from "stream";
+import { pipeline } from "node:stream/promises";
 
-const { allOf, assertThat, hasItem, hasProperties } = require("hamjest");
+import { allOf, assertThat, hasItem, hasProperties } from "hamjest";
 
-const sax = require("sax");
+import sax from "sax";
 
-const { newSAXStream } = require("../src");
+import { newSAXStream } from "../src/index.js";
 
 describe("streams", function() {
 	describe("newSAXStream", function() {
@@ -136,7 +137,10 @@ class CollectorStream extends Writable {
 
 // readFileStream :: String -> ReadStream
 const readFileStream = (file) =>
-	fs.createReadStream(path.join(__dirname, file), { encoding: "utf8" });
+	fs.createReadStream(
+		path.join(path.dirname(url.fileURLToPath(import.meta.url)), file),
+		{ encoding: "utf8" }
+	);
 
 const parse = async (parser, input) => {
 	const collector = new CollectorStream()
