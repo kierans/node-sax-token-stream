@@ -1,0 +1,41 @@
+name: Generate docs
+
+on:
+  push:
+    branches:
+     - main
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+
+      - name: Run JSDoc
+        run: | 
+          npm install jsdoc --no-save
+          npm run docs
+
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v7
+        with:
+          base: main
+          commit-message: 'Update docs'
+          author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
+          branch: docs
+          delete-branch: true
+          title: 'Update docs'
+          body: |
+            Update docs due to changes in ${{ github.sha }}
+          assignees: kierans
