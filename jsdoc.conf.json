@@ -3,5 +3,6 @@
 		"default": {
 			"includeDate": false
 		}
-	}
+	},
+	"title": "node-sax-token-stream API documentation"
 }
