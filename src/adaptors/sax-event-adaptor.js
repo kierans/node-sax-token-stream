@@ -131,7 +131,7 @@ const { assign2 } = require("./utils");
  */
 class SAXEventAdaptor extends EventEmitter {
 	/**
-	 * @param {Writable} delegate
+	 * @param {EventEmitter} delegate
 	 */
 	constructor(delegate) {
 		super();
