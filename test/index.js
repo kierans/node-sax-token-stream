@@ -8,12 +8,61 @@ import { pipeline } from "node:stream/promises";
 
 import { allOf, assertThat, hasItem, hasProperties } from "hamjest";
 
+import { SAXParser as Parse5SAXParser } from "parse5-sax-parser";
 import sax from "sax";
 
-import { newSAXStream } from "../src/index.js";
+import { newParse5Stream, newSAXStream } from "../src/index.js";
 
 describe("streams", function() {
-	describe("newSAXStream", function() {
+	(() => {
+		const events = [
+			{
+				type: 'comment',
+				value: {
+					text: " This is a comment "
+				}
+			},
+			{
+				type: 'doctype',
+				value: {
+					name: "html"
+				}
+			},
+			{
+				type: 'endTag',
+				value: {
+					tagName: "html"
+				}
+			},
+			{
+				type: 'startTag',
+				value: {
+					tagName: "html",
+					attrs: [
+						{
+							name: "lang",
+							value: "en"
+						}
+					],
+					selfClosing: false
+				}
+			},
+			{
+				type: 'text',
+				value: {
+					text: "Hello world!"
+				}
+			}
+		]
+
+		generateTests("newParse5Stream", events, () =>
+			parse(
+				newParse5Stream(new Parse5SAXParser()),
+				readFileStream("data/parse5.html")
+			));
+	})();
+
+	(() => {
 		const events = [
 			{
 				type: 'attribute',
@@ -96,27 +145,31 @@ describe("streams", function() {
 			}
 		]
 
-		let tokens;
-
-		before(async function() {
-			tokens = await parseXML();
-		});
-
-		events.forEach((event) => {
-			it(`should capture ${event.type} event`, async function() {
-				assertThat(tokens, hasItem(allOf(
-					hasProperties({ type: event.type }),
-					hasProperties(event.value))
-				));
-			});
-		});
-
-		const parseXML = () =>
+		generateTests("newSAXStream", events, () =>
 			parse(
 				newSAXStream(sax.createStream(true, { xmlns: true })),
 				readFileStream("data/sax.xml")
-			)
-	});
+			));
+	})();
+
+	function generateTests(title, events, parser) {
+		let tokens;
+
+		before(async function() {
+			tokens = await parser();
+		});
+
+		describe(title, function() {
+			events.forEach((event) => {
+				it(`should capture ${event.type} event`, async function() {
+					assertThat(tokens, hasItem(allOf(
+						hasProperties({ type: event.type }),
+						hasProperties(event.value))
+					));
+				});
+			});
+		});
+	}
 });
 
 class CollectorStream extends Writable {
