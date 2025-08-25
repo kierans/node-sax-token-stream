@@ -28,11 +28,11 @@
         <article>
             <pre class="prettyprint source linenums"><code>"use strict";
 
-const EventEmitter = require("node:events");
+import EventEmitter from "node:events";
 
-const { TokenisingStream } = require("tokenising-stream");
+import { TokenisingStream } from "tokenising-stream";
 
-const { assign2 } = require("./utils");
+import { assign2 } from "./utils.js";
 
 /**
  * @typedef {Object} SAXEventAdaptor~AttributeToken
@@ -157,7 +157,7 @@ const { assign2 } = require("./utils");
  * @implements EventAdaptor
  * @see https://www.npmjs.com/package/sax
  */
-class SAXEventAdaptor extends EventEmitter {
+export default class SAXEventAdaptor extends EventEmitter {
 	/**
 	 * @param {EventEmitter} delegate
 	 */
@@ -266,8 +266,6 @@ class SAXEventAdaptor extends EventEmitter {
 		})
 	}
 }
-
-module.exports = SAXEventAdaptor;
 </code></pre>
         </article>
     </section>
@@ -278,7 +276,7 @@ module.exports = SAXEventAdaptor;
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="SAXEventAdaptor.html">SAXEventAdaptor</a></li></ul><h3>Global</h3><ul><li><a href="global.html#newSAXStream">newSAXStream</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="module.exports.html">exports</a></li></ul><h3>Global</h3><ul><li><a href="global.html#newSAXStream">newSAXStream</a></li></ul>
 </nav>
 
 <br class="clear">
