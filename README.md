@@ -1,6 +1,6 @@
 # node-sax-token-stream
 
-A Node.js [Transform stream][1] that pipes tokens from a SAX style parser.
+An ES6 Node.js [Transform stream][1] that pipes tokens from a SAX style parser.
 
 A widespread pattern with streaming parsers is to emit events when tokens are parsed from an
 input string. Examples include [SAX][2] libraries, [parse5][3] (HTML), and other streaming 

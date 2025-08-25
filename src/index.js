@@ -1,8 +1,8 @@
 "use strict";
 
-const { TokenisingStream } = require("tokenising-stream");
+import { TokenisingStream } from "tokenising-stream";
 
-const SAXEventAdaptor = require("./adaptors/sax-event-adaptor");
+import SAXEventAdaptor from "./adaptors/sax-event-adaptor.js";
 
 /**
  * See the {@link SAXEventAdaptor} documentation for token details.
@@ -10,12 +10,8 @@ const SAXEventAdaptor = require("./adaptors/sax-event-adaptor");
  * @param {Writable} parser
  * @returns TokenisingStream
  */
-const newSAXStream = (parser) =>
+export const newSAXStream = (parser) =>
 	new TokenisingStream({
 		delegate: parser,
 		adaptor: new SAXEventAdaptor(parser)
 	})
-
-module.exports = {
-	newSAXStream
-}

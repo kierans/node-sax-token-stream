@@ -1,10 +1,10 @@
 "use strict";
 
-const EventEmitter = require("node:events");
+import EventEmitter from "node:events";
 
-const { TokenisingStream } = require("tokenising-stream");
+import { TokenisingStream } from "tokenising-stream";
 
-const { assign2 } = require("./utils");
+import { assign2 } from "./utils.js";
 
 /**
  * @typedef {Object} SAXEventAdaptor~AttributeToken
@@ -129,7 +129,7 @@ const { assign2 } = require("./utils");
  * @implements EventAdaptor
  * @see https://www.npmjs.com/package/sax
  */
-class SAXEventAdaptor extends EventEmitter {
+export default class SAXEventAdaptor extends EventEmitter {
 	/**
 	 * @param {EventEmitter} delegate
 	 */
@@ -238,5 +238,3 @@ class SAXEventAdaptor extends EventEmitter {
 		})
 	}
 }
-
-module.exports = SAXEventAdaptor;
