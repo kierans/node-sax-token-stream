@@ -28,9 +28,9 @@
         <article>
             <pre class="prettyprint source linenums"><code>"use strict";
 
-const { TokenisingStream } = require("tokenising-stream");
+import { TokenisingStream } from "tokenising-stream";
 
-const SAXEventAdaptor = require("./adaptors/sax-event-adaptor");
+import SAXEventAdaptor from "./adaptors/sax-event-adaptor.js";
 
 /**
  * See the {@link SAXEventAdaptor} documentation for token details.
@@ -38,15 +38,11 @@ const SAXEventAdaptor = require("./adaptors/sax-event-adaptor");
  * @param {Writable} parser
  * @returns TokenisingStream
  */
-const newSAXStream = (parser) =>
+export const newSAXStream = (parser) =>
 	new TokenisingStream({
 		delegate: parser,
 		adaptor: new SAXEventAdaptor(parser)
 	})
-
-module.exports = {
-	newSAXStream
-}
 </code></pre>
         </article>
     </section>
@@ -57,7 +53,7 @@ module.exports = {
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="SAXEventAdaptor.html">SAXEventAdaptor</a></li></ul><h3>Global</h3><ul><li><a href="global.html#newSAXStream">newSAXStream</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="module.exports.html">exports</a></li></ul><h3>Global</h3><ul><li><a href="global.html#newSAXStream">newSAXStream</a></li></ul>
 </nav>
 
 <br class="clear">
