@@ -8,11 +8,68 @@ import { pipeline } from "node:stream/promises";
 
 import { allOf, assertThat, hasItem, hasProperties } from "hamjest";
 
+import { SAXParser as Parse5SAXParser } from "parse5-sax-parser";
 import sax from "sax";
 
-import { newSAXStream } from "../src/index.js";
+import { newParse5Stream, newSAXStream } from "../src/index.js";
 
 describe("streams", function() {
+	describe("newParse5Stream", function() {
+		const events = [
+			{
+				type: 'comment',
+				value: {
+					comment: " This is a comment "
+				}
+			},
+			{
+				type: 'doctype',
+				value: {
+					doctype: "html"
+				}
+			},
+			{
+				type: 'endTag',
+				value: {
+					tagName: "html"
+				}
+			},
+			{
+				type: 'startTag',
+				value: {
+					tagName: "html",
+					attrs: [
+						{
+							name: "lang",
+							value: "en"
+						}
+					],
+					selfClosing: false
+				}
+			},
+			{
+				type: 'text',
+				value: {
+					text: "Hello world!"
+				}
+			}
+		]
+
+		let tokens;
+
+		before(async function() {
+			tokens = await parseHTML();
+		});
+
+		generateTests(events, () => tokens);
+
+		const parseHTML = () =>
+			parse(
+				newParse5Stream(new Parse5SAXParser({ encoding: 'utf8' })),
+				readFileStream("data/parse5.html")
+			)
+	});
+
 	describe("newSAXStream", function() {
 		const events = [
 			{
@@ -102,14 +159,7 @@ describe("streams", function() {
 			tokens = await parseXML();
 		});
 
-		events.forEach((event) => {
-			it(`should capture ${event.type} event`, async function() {
-				assertThat(tokens, hasItem(allOf(
-					hasProperties({ type: event.type }),
-					hasProperties(event.value))
-				));
-			});
-		});
+		generateTests(events, () => tokens);
 
 		const parseXML = () =>
 			parse(
@@ -117,6 +167,17 @@ describe("streams", function() {
 				readFileStream("data/sax.xml")
 			)
 	});
+
+	function generateTests(events, tokens) {
+		events.forEach((event) => {
+			it(`should capture ${event.type} event`, async function() {
+				assertThat(tokens(), hasItem(allOf(
+					hasProperties({ type: event.type }),
+					hasProperties(event.value))
+				));
+			});
+		});
+	}
 });
 
 class CollectorStream extends Writable {
@@ -144,6 +205,11 @@ const readFileStream = (file) =>
 
 const parse = async (parser, input) => {
 	const collector = new CollectorStream()
+
+	// TODO: Remove me.
+	input.on("data", (data) => {
+		const t = data;
+	})
 
 	await pipeline(
 		input,
