@@ -566,6 +566,263 @@
   {
     "__docId__": 48,
     "kind": "file",
+    "name": "src/adaptors/parse5-event-adaptor.js",
+    "content": "\"use strict\";\n\nimport EventEmitter from \"node:events\";\n\nimport { TokenisingStream } from \"tokenising-stream\";\n\nimport { assign2 } from \"./utils.js\";\n\n/**\n * @typedef {Object} Parse5EventAdaptor~CommentToken\n * @extends {parse5-sax-parser~Comment}\n * @property {'comment'} type - Token type\n */\n\n/**\n * @typedef {Object} Parse5EventAdaptor~DoctypeToken\n * @extends {parse5-sax-parser~Doctype}\n * @property {'doctype'} type - Token type\n */\n\n/**\n * @typedef {Object} Parse5EventAdaptor~EndTagToken\n * @extends {parse5-sax-parser~EndTag}\n * @property {'endTag'} type - Token type\n */\n\n/**\n* @typedef {Object} Parse5EventAdaptor~StartTagToken\n* @extends {parse5-sax-parser~StartTag}\n* @property {'startTag'} type - Token type\n*/\n\n/**\n * @typedef {Object} Parse5EventAdaptor~TextToken\n * @extends {parse5-sax-parser~Text}\n * @property {'text'} type - Token type\n */\n\n/**\n * @typedef {Parse5EventAdaptor~CommentToken|Parse5EventAdaptor~DoctypeToken|Parse5EventAdaptor~EndTagToken|Parse5EventAdaptor~StartTagToken|Parse5EventAdaptor~TextToken} Parse5EventAdaptor~Parse5Token\n */\n\n/**\n * EventAdaptor for Parse5 SAX parser.\n *\n * The following events are piped through the stream as tokens\n *\n * <ul>\n *   <li><b>comment</b> - {@link Parse5EventAdaptor~CommentToken}</li>\n *   <li><b>doctype</b> - {@link Parse5EventAdaptor~DoctypeToken}</li>\n *   <li><b>endTag</b> - {@link Parse5EventAdaptor~EndTagToken}</li>\n *   <li><b>startTag</b> - {@link Parse5EventAdaptor~StartTagToken}</li>\n *   <li><b>text</b> - {@link Parse5EventAdaptor~TextToken}</li>\n * </ul>\n *\n * Tokens extend the base types as defined in the `parse5-sax-parser` module. For example,\n * a `StartTagToken` will extend the `StartTag` type.\n *\n * See the Parse5 documentation for more details.\n *\n * @implements {EventAdaptor}\n * @see https://www.npmjs.com/package/parse5-sax-parser\n * @see https://parse5.js.org/modules/parse5-sax-parser.html\n */\nexport default class Parse5EventAdaptor extends EventEmitter {\n\t/**\n\t * @param {EventEmitter} delegate\n\t */\n\tconstructor(delegate) {\n\t\tsuper();\n\n\t\tdelegate.on(\"comment\", (token) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(token, {\n\t\t\t\ttype: \"comment\"\n\t\t\t}));\n\t\t});\n\n\t\tdelegate.on(\"doctype\", (token) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(token, {\n\t\t\t\ttype: \"doctype\"\n\t\t\t}));\n\t\t});\n\n\t\tdelegate.on(\"endTag\", (token) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(token, {\n\t\t\t\ttype: \"endTag\"\n\t\t\t}));\n\t\t});\n\n\t\tdelegate.on(\"startTag\", (token) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(token, {\n\t\t\t\ttype: \"startTag\"\n\t\t\t}));\n\t\t});\n\n\t\tdelegate.on(\"text\", (token) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(token, {\n\t\t\t\ttype: \"text\"\n\t\t\t}));\n\t\t});\n\n\t\tdelegate.on(\"error\", (error) => {\n\t\t\tthis.emit(TokenisingStream.ERROR_EVENT_NAME, error);\n\t\t});\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/node-sax-token-stream/node-sax-token-stream/src/adaptors/parse5-event-adaptor.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "typedef",
+    "name": "Parse5EventAdaptor~CommentToken",
+    "memberof": "src/adaptors/parse5-event-adaptor.js",
+    "static": true,
+    "longname": "src/adaptors/parse5-event-adaptor.js~Parse5EventAdaptor~CommentToken",
+    "access": "public",
+    "description": "",
+    "unknown": [
+      {
+        "tagName": "@extends",
+        "tagValue": "{parse5-sax-parser~Comment}"
+      }
+    ],
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "'comment'"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": "Token type"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "Parse5EventAdaptor~CommentToken"
+    }
+  },
+  {
+    "__docId__": 50,
+    "kind": "typedef",
+    "name": "Parse5EventAdaptor~DoctypeToken",
+    "memberof": "src/adaptors/parse5-event-adaptor.js",
+    "static": true,
+    "longname": "src/adaptors/parse5-event-adaptor.js~Parse5EventAdaptor~DoctypeToken",
+    "access": "public",
+    "description": "",
+    "unknown": [
+      {
+        "tagName": "@extends",
+        "tagValue": "{parse5-sax-parser~Doctype}"
+      }
+    ],
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "'doctype'"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": "Token type"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "Parse5EventAdaptor~DoctypeToken"
+    }
+  },
+  {
+    "__docId__": 51,
+    "kind": "typedef",
+    "name": "Parse5EventAdaptor~EndTagToken",
+    "memberof": "src/adaptors/parse5-event-adaptor.js",
+    "static": true,
+    "longname": "src/adaptors/parse5-event-adaptor.js~Parse5EventAdaptor~EndTagToken",
+    "access": "public",
+    "description": "",
+    "unknown": [
+      {
+        "tagName": "@extends",
+        "tagValue": "{parse5-sax-parser~EndTag}"
+      }
+    ],
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "'endTag'"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": "Token type"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "Parse5EventAdaptor~EndTagToken"
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "typedef",
+    "name": "Parse5EventAdaptor~StartTagToken",
+    "memberof": "src/adaptors/parse5-event-adaptor.js",
+    "static": true,
+    "longname": "src/adaptors/parse5-event-adaptor.js~Parse5EventAdaptor~StartTagToken",
+    "access": "public",
+    "description": "",
+    "unknown": [
+      {
+        "tagName": "@extends",
+        "tagValue": "{parse5-sax-parser~StartTag}"
+      }
+    ],
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "'startTag'"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": "Token type"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "Parse5EventAdaptor~StartTagToken"
+    }
+  },
+  {
+    "__docId__": 53,
+    "kind": "typedef",
+    "name": "Parse5EventAdaptor~TextToken",
+    "memberof": "src/adaptors/parse5-event-adaptor.js",
+    "static": true,
+    "longname": "src/adaptors/parse5-event-adaptor.js~Parse5EventAdaptor~TextToken",
+    "access": "public",
+    "description": "",
+    "unknown": [
+      {
+        "tagName": "@extends",
+        "tagValue": "{parse5-sax-parser~Text}"
+      }
+    ],
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "'text'"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": "Token type"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "Parse5EventAdaptor~TextToken"
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "typedef",
+    "name": "Parse5EventAdaptor~Parse5Token",
+    "memberof": "src/adaptors/parse5-event-adaptor.js",
+    "static": true,
+    "longname": "src/adaptors/parse5-event-adaptor.js~Parse5EventAdaptor~Parse5Token",
+    "access": "public",
+    "description": "",
+    "type": {
+      "types": [
+        "Parse5EventAdaptor~CommentToken",
+        "Parse5EventAdaptor~DoctypeToken",
+        "Parse5EventAdaptor~EndTagToken",
+        "Parse5EventAdaptor~StartTagToken",
+        "Parse5EventAdaptor~TextToken"
+      ],
+      "optional": false,
+      "name": "Parse5EventAdaptor~Parse5Token"
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "class",
+    "name": "Parse5EventAdaptor",
+    "memberof": "src/adaptors/parse5-event-adaptor.js",
+    "static": true,
+    "longname": "src/adaptors/parse5-event-adaptor.js~Parse5EventAdaptor",
+    "access": "public",
+    "export": true,
+    "importPath": "sax-token-stream/src/adaptors/parse5-event-adaptor.js",
+    "importStyle": "Parse5EventAdaptor",
+    "description": "EventAdaptor for Parse5 SAX parser.\n\nThe following events are piped through the stream as tokens\n\n<ul>\n  <li><b>comment</b> - {@link Parse5EventAdaptor~CommentToken}</li>\n  <li><b>doctype</b> - {@link Parse5EventAdaptor~DoctypeToken}</li>\n  <li><b>endTag</b> - {@link Parse5EventAdaptor~EndTagToken}</li>\n  <li><b>startTag</b> - {@link Parse5EventAdaptor~StartTagToken}</li>\n  <li><b>text</b> - {@link Parse5EventAdaptor~TextToken}</li>\n</ul>\n\nTokens extend the base types as defined in the `parse5-sax-parser` module. For example,\na `StartTagToken` will extend the `StartTag` type.\n\nSee the Parse5 documentation for more details.",
+    "see": [
+      "https://www.npmjs.com/package/parse5-sax-parser",
+      "https://parse5.js.org/modules/parse5-sax-parser.html"
+    ],
+    "lineNumber": 65,
+    "interface": false,
+    "extends": [
+      "node:events~EventEmitter"
+    ],
+    "implements": [
+      "EventAdaptor"
+    ]
+  },
+  {
+    "__docId__": 56,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/adaptors/parse5-event-adaptor.js~Parse5EventAdaptor",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/adaptors/parse5-event-adaptor.js~Parse5EventAdaptor#constructor",
+    "access": "public",
+    "description": "",
+    "lineNumber": 69,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "EventEmitter"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "delegate",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 57,
+    "kind": "file",
     "name": "src/adaptors/sax-event-adaptor.js",
     "content": "\"use strict\";\n\nimport EventEmitter from \"node:events\";\n\nimport { TokenisingStream } from \"tokenising-stream\";\n\nimport { assign2 } from \"./utils.js\";\n\n/**\n * @typedef {Object} SAXEventAdaptor~AttributeToken\n * @property {'attribute'} type - Token type\n * @property {string} name - Attribute name\n * @property {string} value - Attribute value\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~CDataToken\n * @property {'cdata'} type - Token type\n * @property {string} cdata - CDATA content\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~CloseCDataToken\n * @property {'closecdata'} type - Token type\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~CloseNamespaceToken\n * @property {'closenamespace'} type - Token type\n * @property {string} prefix - Namespace prefix\n * @property {string} uri - Namespace URI\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~CloseTagToken\n * @property {'closetag'} type - Token type\n * @property {string} name - Tag name\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~CommentToken\n * @property {'comment'} type - Token type\n * @property {string} comment - Comment content\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~DoctypeToken\n * @property {'doctype'} type - Token type\n * @property {string} doctype - DOCTYPE declaration\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~OpenCDataToken\n * @property {'opencdata'} type - Token type\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~OpenTagToken\n * @property {'opentag'} type - Token type\n * @property {string} name - Tag name\n * @property {boolean} isSelfClosing - Whether the tag is self-closing\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~OpenTagStartToken\n * @property {'opentagstart'} type - Token type\n * @property {string} name - Tag name\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~OpenNamespaceToken\n * @property {'opennamespace'} type - Token type\n * @property {string} prefix - Namespace prefix\n * @property {string} uri - Namespace URI\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~ProcessingInstructionToken\n * @property {'processinginstruction'} type - Token type\n * @property {string} name - Processing instruction name\n * @property {string} body - Processing instruction body\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~ScriptToken\n * @property {'script'} type - Token type\n * @property {string} script - Script content\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~SGMLDeclarationToken\n * @property {'sgmldeclaration'} type - Token type\n * @property {string} sgmldeclaration - Declaration content\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~TextToken\n * @property {'text'} type - Token type\n * @property {string} text - Text content\n */\n\n/**\n * @typedef {SAXEventAdaptor~AttributeToken|SAXEventAdaptor~CDataToken|SAXEventAdaptor~CloseCDataToken|SAXEventAdaptor~CloseNamespaceToken|SAXEventAdaptor~CloseTagToken|SAXEventAdaptor~CommentToken|SAXEventAdaptor~DoctypeToken|SAXEventAdaptor~OpenCDataToken|SAXEventAdaptor~OpenTagToken|SAXEventAdaptor~OpenTagStartToken|SAXEventAdaptor~OpenNamespaceToken|SAXEventAdaptor~ProcessingInstructionToken|SAXEventAdaptor~ScriptToken|SAXEventAdaptor~SGMLDeclarationToken|SAXEventAdaptor~TextToken} SAXEventAdaptor~SAXToken\n */\n\n/**\n * EventAdaptor for SAX parser.\n *\n * The following events are piped through the stream as tokens\n *\n * <ul>\n *   <li><b>attribute</b> - {@link SAXEventAdaptor~AttributeToken}</li>\n *   <li><b>cdata</b> - {@link SAXEventAdaptor~CDataToken}</li>\n *   <li><b>closecdata</b> - {@link SAXEventAdaptor~CloseCDataToken}</li>\n *   <li><b>closenamespace</b> - {@link SAXEventAdaptor~CloseNamespaceToken}</li>\n *   <li><b>closetag</b> - {@link SAXEventAdaptor~CloseTagToken}</li>\n *   <li><b>comment</b> - {@link SAXEventAdaptor~CommentToken}</li>\n *   <li><b>doctype</b> - {@link SAXEventAdaptor~DoctypeToken}</li>\n *   <li><b>opencdata</b> - {@link SAXEventAdaptor~OpenCDataToken}</li>\n *   <li><b>opentag</b> - {@link SAXEventAdaptor~OpenTagToken}</li>\n *   <li><b>opentagstart</b> - {@link SAXEventAdaptor~OpenTagStartToken}</li>\n *   <li><b>opennamespace</b> - {@link SAXEventAdaptor~OpenNamespaceToken}</li>\n *   <li><b>processinginstruction</b> - {@link SAXEventAdaptor~ProcessingInstructionToken}</li>\n *   <li><b>script</b> - {@link SAXEventAdaptor~ScriptToken}</li>\n *   <li><b>sgmldeclaration</b> - {@link SAXEventAdaptor~SGMLDeclarationToken}</li>\n *   <li><b>text</b> - {@link SAXEventAdaptor~TextToken}</li>\n * </ul>\n *\n * @implements {EventAdaptor}\n * @see https://www.npmjs.com/package/sax\n */\nexport default class SAXEventAdaptor extends EventEmitter {\n\t/**\n\t * @param {EventEmitter} delegate\n\t */\n\tconstructor(delegate) {\n\t\tsuper();\n\n\t\tdelegate.on(\"attribute\", (token) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(token, {\n\t\t\t\ttype: \"attribute\"\n\t\t\t}));\n\t\t});\n\n\t\tdelegate.on(\"cdata\", (text) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, {\n\t\t\t\ttype: \"cdata\",\n\t\t\t\tcdata: text\n\t\t\t});\n\t\t});\n\n\t\tdelegate.on(\"closecdata\", () => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, {\n\t\t\t\ttype: \"closecdata\"\n\t\t\t});\n\t\t});\n\n\t\tdelegate.on(\"closenamespace\", (ns) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(ns, {\n\t\t\t\ttype: \"closenamespace\",\n\t\t\t}));\n\t\t});\n\n\t\tdelegate.on(\"closetag\", (name) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, {\n\t\t\t\ttype: \"closetag\",\n\t\t\t\tname\n\t\t\t});\n\t\t});\n\n\t\tdelegate.on(\"comment\", (comment) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, {\n\t\t\t\ttype: \"comment\",\n\t\t\t\tcomment: comment\n\t\t\t});\n\t\t});\n\n\t\tdelegate.on(\"doctype\", (doctype) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, {\n\t\t\t\ttype: \"doctype\",\n\t\t\t\tdoctype\n\t\t\t});\n\t\t});\n\n\t\tdelegate.on(\"opencdata\", () => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, {\n\t\t\t\ttype: \"opencdata\"\n\t\t\t});\n\t\t});\n\n\t\tdelegate.on(\"opennamespace\", (ns) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(ns, {\n\t\t\t\ttype: \"opennamespace\",\n\t\t\t}));\n\t\t});\n\n\t\tdelegate.on(\"opentag\", (node) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(node, {\n\t\t\t\ttype: \"opentag\",\n\t\t\t}));\n\t\t});\n\n\t\tdelegate.on(\"opentagstart\", (node) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(node, {\n\t\t\t\ttype: \"opentagstart\",\n\t\t\t}));\n\t\t});\n\n\t\tdelegate.on(\"processinginstruction\", (instruction) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(instruction, {\n\t\t\t\ttype: \"processinginstruction\",\n\t\t\t}));\n\t\t});\n\n\t\tdelegate.on(\"script\", (script) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, {\n\t\t\t\ttype: \"script\",\n\t\t\t\tscript: script\n\t\t\t});\n\t\t});\n\n\t\tdelegate.on(\"sgmldeclaration\", (sgmldeclaration) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, {\n\t\t\t\ttype: \"sgmldeclaration\",\n\t\t\t\tsgmldeclaration: sgmldeclaration\n\t\t\t});\n\t\t});\n\n\t\tdelegate.on(\"text\", (text) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, {\n\t\t\t\ttype: \"text\",\n\t\t\t\ttext: text\n\t\t\t});\n\t\t});\n\n\t\tdelegate.on(\"error\", (error) => {\n\t\t\tthis.emit(TokenisingStream.ERROR_EVENT_NAME, error);\n\t\t})\n\t}\n}\n",
     "static": true,
@@ -575,7 +832,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 49,
+    "__docId__": 58,
     "kind": "typedef",
     "name": "SAXEventAdaptor~AttributeToken",
     "memberof": "src/adaptors/sax-event-adaptor.js",
@@ -624,7 +881,7 @@
     }
   },
   {
-    "__docId__": 50,
+    "__docId__": 59,
     "kind": "typedef",
     "name": "SAXEventAdaptor~CDataToken",
     "memberof": "src/adaptors/sax-event-adaptor.js",
@@ -663,7 +920,7 @@
     }
   },
   {
-    "__docId__": 51,
+    "__docId__": 60,
     "kind": "typedef",
     "name": "SAXEventAdaptor~CloseCDataToken",
     "memberof": "src/adaptors/sax-event-adaptor.js",
@@ -692,7 +949,7 @@
     }
   },
   {
-    "__docId__": 52,
+    "__docId__": 61,
     "kind": "typedef",
     "name": "SAXEventAdaptor~CloseNamespaceToken",
     "memberof": "src/adaptors/sax-event-adaptor.js",
@@ -741,7 +998,7 @@
     }
   },
   {
-    "__docId__": 53,
+    "__docId__": 62,
     "kind": "typedef",
     "name": "SAXEventAdaptor~CloseTagToken",
     "memberof": "src/adaptors/sax-event-adaptor.js",
@@ -780,7 +1037,7 @@
     }
   },
   {
-    "__docId__": 54,
+    "__docId__": 63,
     "kind": "typedef",
     "name": "SAXEventAdaptor~CommentToken",
     "memberof": "src/adaptors/sax-event-adaptor.js",
@@ -819,7 +1076,7 @@
     }
   },
   {
-    "__docId__": 55,
+    "__docId__": 64,
     "kind": "typedef",
     "name": "SAXEventAdaptor~DoctypeToken",
     "memberof": "src/adaptors/sax-event-adaptor.js",
@@ -858,7 +1115,7 @@
     }
   },
   {
-    "__docId__": 56,
+    "__docId__": 65,
     "kind": "typedef",
     "name": "SAXEventAdaptor~OpenCDataToken",
     "memberof": "src/adaptors/sax-event-adaptor.js",
@@ -887,7 +1144,7 @@
     }
   },
   {
-    "__docId__": 57,
+    "__docId__": 66,
     "kind": "typedef",
     "name": "SAXEventAdaptor~OpenTagToken",
     "memberof": "src/adaptors/sax-event-adaptor.js",
@@ -936,7 +1193,7 @@
     }
   },
   {
-    "__docId__": 58,
+    "__docId__": 67,
     "kind": "typedef",
     "name": "SAXEventAdaptor~OpenTagStartToken",
     "memberof": "src/adaptors/sax-event-adaptor.js",
@@ -975,7 +1232,7 @@
     }
   },
   {
-    "__docId__": 59,
+    "__docId__": 68,
     "kind": "typedef",
     "name": "SAXEventAdaptor~OpenNamespaceToken",
     "memberof": "src/adaptors/sax-event-adaptor.js",
@@ -1024,7 +1281,7 @@
     }
   },
   {
-    "__docId__": 60,
+    "__docId__": 69,
     "kind": "typedef",
     "name": "SAXEventAdaptor~ProcessingInstructionToken",
     "memberof": "src/adaptors/sax-event-adaptor.js",
@@ -1073,7 +1330,7 @@
     }
   },
   {
-    "__docId__": 61,
+    "__docId__": 70,
     "kind": "typedef",
     "name": "SAXEventAdaptor~ScriptToken",
     "memberof": "src/adaptors/sax-event-adaptor.js",
@@ -1112,7 +1369,7 @@
     }
   },
   {
-    "__docId__": 62,
+    "__docId__": 71,
     "kind": "typedef",
     "name": "SAXEventAdaptor~SGMLDeclarationToken",
     "memberof": "src/adaptors/sax-event-adaptor.js",
@@ -1151,7 +1408,7 @@
     }
   },
   {
-    "__docId__": 63,
+    "__docId__": 72,
     "kind": "typedef",
     "name": "SAXEventAdaptor~TextToken",
     "memberof": "src/adaptors/sax-event-adaptor.js",
@@ -1190,7 +1447,7 @@
     }
   },
   {
-    "__docId__": 64,
+    "__docId__": 73,
     "kind": "typedef",
     "name": "SAXEventAdaptor~SAXToken",
     "memberof": "src/adaptors/sax-event-adaptor.js",
@@ -1221,7 +1478,7 @@
     }
   },
   {
-    "__docId__": 65,
+    "__docId__": 74,
     "kind": "class",
     "name": "SAXEventAdaptor",
     "memberof": "src/adaptors/sax-event-adaptor.js",
@@ -1245,7 +1502,7 @@
     ]
   },
   {
-    "__docId__": 66,
+    "__docId__": 75,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/adaptors/sax-event-adaptor.js~SAXEventAdaptor",
@@ -1270,7 +1527,7 @@
     ]
   },
   {
-    "__docId__": 67,
+    "__docId__": 76,
     "kind": "file",
     "name": "src/adaptors/utils.js",
     "content": "\"use strict\";\n\n/**\n * @ignore\n */\nexport const assign2 = (a, b) => Object.assign({}, a, b);\n",
@@ -1281,7 +1538,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 68,
+    "__docId__": 77,
     "kind": "function",
     "name": "assign2",
     "memberof": "src/adaptors/utils.js",
@@ -1313,10 +1570,10 @@
     "return": null
   },
   {
-    "__docId__": 69,
+    "__docId__": 78,
     "kind": "file",
     "name": "src/index.js",
-    "content": "\"use strict\";\n\nimport { TokenisingStream } from \"tokenising-stream\";\n\nimport SAXEventAdaptor from \"./adaptors/sax-event-adaptor.js\";\n\n/**\n * See the {@link SAXEventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @return {TokenisingStream}\n */\nexport const newSAXStream = (parser) =>\n\tnew TokenisingStream({\n\t\tdelegate: parser,\n\t\tadaptor: new SAXEventAdaptor(parser)\n\t})\n",
+    "content": "\"use strict\";\n\nimport { TokenisingStream } from \"tokenising-stream\";\n\nimport Parse5EventAdaptor from \"./adaptors/parse5-event-adaptor.js\";\nimport SAXEventAdaptor from \"./adaptors/sax-event-adaptor.js\";\n\n/**\n * See the {@link Parse5EventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @return {TokenisingStream}\n */\nexport const newParse5Stream = (parser) =>\n\tnew TokenisingStream({\n\t\tdelegate: parser,\n\t\tadaptor: new Parse5EventAdaptor(parser),\n\n\t\t// parse5 parser Writable can only work with strings not Buffers.\n\t\tdecodeStrings: false\n\t})\n\n/**\n * See the {@link SAXEventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @return {TokenisingStream}\n */\nexport const newSAXStream = (parser) =>\n\tnew TokenisingStream({\n\t\tdelegate: parser,\n\t\tadaptor: new SAXEventAdaptor(parser)\n\t})\n",
     "static": true,
     "longname": "/home/runner/work/node-sax-token-stream/node-sax-token-stream/src/index.js",
     "access": "public",
@@ -1324,7 +1581,43 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 70,
+    "__docId__": 79,
+    "kind": "function",
+    "name": "newParse5Stream",
+    "memberof": "src/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/index.js~newParse5Stream",
+    "access": "public",
+    "export": true,
+    "importPath": "sax-token-stream",
+    "importStyle": "{newParse5Stream}",
+    "description": "See the {@link Parse5EventAdaptor} documentation for token details.",
+    "lineNumber": 14,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Writable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "parser",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "TokenisingStream"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 80,
     "kind": "function",
     "name": "newSAXStream",
     "memberof": "src/index.js",
@@ -1337,7 +1630,7 @@
     "importPath": "sax-token-stream",
     "importStyle": "{newSAXStream}",
     "description": "See the {@link SAXEventAdaptor} documentation for token details.",
-    "lineNumber": 13,
+    "lineNumber": 29,
     "params": [
       {
         "nullable": null,
@@ -1361,7 +1654,7 @@
   },
   {
     "kind": "index",
-    "content": "# node-sax-token-stream\n\nAn ES6 Node.js [Transform stream][1] that pipes tokens from a SAX style parser.\n\nA widespread pattern with streaming parsers is to emit events when tokens are parsed from an\ninput string. Examples include [SAX][2] libraries, [parse5][3] (HTML), and other streaming \nparsers on NPM. The parser is often wrapped in a `Writable` stream to allow input strings to \nbe streamed from a source and piped into the parser. For example, a file stream or an HTTP \nrequest stream. The parser stream forwards events from the wrapped parser to listeners \nregistered on the stream; as streams are `EventEmitter`s.\n\nWhile the input to the parser stream respects [back-pressure][4], the token events are not\nstreamed but merely emitted synchronously, without any kind of flow control. A typical reason\nfor choosing an event-driven parser is to avoid buffering the entire output, which in\nJavascript typically means something needs to be done with the tokens, such as streaming\nthem elsewhere. However, simply writing the events to a stream ignores the back-pressure\nmechanism; many events could be emitted, which could overflow a downstream listener in a\nstream flow if data is flowing slowly, with no way to limit the fire hose upstream.\n\nIf an error occurs during parsing, the input stream needs to be destroyed to stop\nreading more data.\n\nStreams provide a standard pattern in Node.js to handle back-pressure and errors. What is\nrequired is to have events from a parser stream respect back-pressure in a flow.\n\nThis module provides utility functions to create a stream that wraps a `Writable` stream \nrepresenting a parser. Events are captured and written to the stream in a manner which respects\nback-pressure.\n\nSupports:\n - [sax][2]\n\n[1]: https://nodejs.org/docs/latest-v18.x/api/stream.html#class-streamtransform\n[2]: https://www.npmjs.com/package/sax\n[3]: https://www.npmjs.com/package/parse5-sax-parser\n[4]: https://nodejs.org/en/learn/modules/backpressuring-in-streams\n\n## Usage\n\n```shell\n$ npm install sax-token-stream\n$ npm install <parser-library>\n```\n\n```javascript\n// TODO\n```\n\n## Tests\n\n```shell\n$ npm run test\n```\n",
+    "content": "# node-sax-token-stream\n\nAn ES6 Node.js [Transform stream][1] that pipes tokens from a SAX style parser.\n\nA widespread pattern with streaming parsers is to emit events when tokens are parsed from an\ninput string. Examples include [SAX][2] libraries, [parse5][3] (HTML), and other streaming \nparsers on NPM. The parser is often wrapped in a `Writable` stream to allow input strings to \nbe streamed from a source and piped into the parser. For example, a file stream or an HTTP \nrequest stream. The parser stream forwards events from the wrapped parser to listeners \nregistered on the stream; as streams are `EventEmitter`s.\n\nWhile the input to the parser stream respects [back-pressure][4], the token events are not\nstreamed but merely emitted synchronously, without any kind of flow control. A typical reason\nfor choosing an event-driven parser is to avoid buffering the entire output, which in\nJavascript typically means something needs to be done with the tokens, such as streaming\nthem elsewhere. However, simply writing the events to a stream ignores the back-pressure\nmechanism; many events could be emitted, which could overflow a downstream listener in a\nstream flow if data is flowing slowly, with no way to limit the fire hose upstream.\n\nIf an error occurs during parsing, the input stream needs to be destroyed to stop\nreading more data.\n\nStreams provide a standard pattern in Node.js to handle back-pressure and errors. What is\nrequired is to have events from a parser stream respect back-pressure in a flow.\n\nThis module provides utility functions to create a stream that wraps a `Writable` stream \nrepresenting a parser. Events are captured and written to the stream in a manner which respects\nback-pressure.\n\nSupports:\n - [sax][2]\n - [parse5][3]\n\n[1]: https://nodejs.org/docs/latest-v18.x/api/stream.html#class-streamtransform\n[2]: https://www.npmjs.com/package/sax\n[3]: https://www.npmjs.com/package/parse5-sax-parser\n[4]: https://nodejs.org/en/learn/modules/backpressuring-in-streams\n\n## Usage\n\n```shell\n$ npm install sax-token-stream\n$ npm install <parser-library>\n```\n\n```javascript\n// TODO\n```\n\n## Tests\n\n```shell\n$ npm run test\n```\n",
     "longname": "/home/runner/work/node-sax-token-stream/node-sax-token-stream/README.md",
     "name": "./README.md",
     "static": true,
@@ -1369,7 +1662,7 @@
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"sax-token-stream\",\n  \"version\": \"0.1.0\",\n  \"description\": \"A Node.js Transform stream that pipes tokens from a SAX style parser\",\n  \"main\": \"src/index.js\",\n  \"type\": \"module\",\n  \"types\": \"src/index.d.ts\",\n  \"engines\": {\n    \"node\": \">=14.0.0\"\n  },\n  \"scripts\": {\n    \"docs\": \"esdoc\",\n    \"test\": \"mocha test\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/kierans/node-sax-token-stream.git\"\n  },\n  \"keywords\": [\n    \"html\",\n    \"sax\",\n    \"xml\"\n  ],\n  \"files\": [\n    \"src\",\n    \"README.md\"\n  ],\n  \"author\": \"Kieran Simpson <kierans777@gmail.com>\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/kierans/node-sax-token-stream/issues\"\n  },\n  \"homepage\": \"https://github.com/kierans/node-sax-token-streamm#readme\",\n  \"devDependencies\": {\n    \"@types/mocha\": \"^10.0.10\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"hamjest\": \"^4.1.0\",\n    \"mocha\": \"^11.7.1\",\n    \"sax\": \"^1.4.1\"\n  },\n  \"peerDependencies\": {\n    \"sax\": \"^1.4.1\"\n  },\n  \"dependencies\": {\n    \"tokenising-stream\": \"^0.3.0\"\n  }\n}\n",
+    "content": "{\n  \"name\": \"sax-token-stream\",\n  \"version\": \"0.1.0\",\n  \"description\": \"A Node.js Transform stream that pipes tokens from a SAX style parser\",\n  \"main\": \"src/index.js\",\n  \"type\": \"module\",\n  \"types\": \"src/index.d.ts\",\n  \"engines\": {\n    \"node\": \">=14.0.0\"\n  },\n  \"scripts\": {\n    \"docs\": \"esdoc\",\n    \"test\": \"mocha test\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/kierans/node-sax-token-stream.git\"\n  },\n  \"keywords\": [\n    \"html\",\n    \"sax\",\n    \"xml\"\n  ],\n  \"files\": [\n    \"src\",\n    \"README.md\"\n  ],\n  \"author\": \"Kieran Simpson <kierans777@gmail.com>\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/kierans/node-sax-token-stream/issues\"\n  },\n  \"homepage\": \"https://github.com/kierans/node-sax-token-streamm#readme\",\n  \"devDependencies\": {\n    \"@types/mocha\": \"^10.0.10\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"hamjest\": \"^4.1.0\",\n    \"mocha\": \"^11.7.1\",\n    \"parse5-sax-parser\": \"^8.0.0\",\n    \"sax\": \"^1.4.1\"\n  },\n  \"peerDependencies\": {\n    \"parse5-sax-parser\": \"^8.0.0\",\n    \"sax\": \"^1.4.1\"\n  },\n  \"dependencies\": {\n    \"tokenising-stream\": \"^0.3.0\"\n  }\n}\n",
     "longname": "/home/runner/work/node-sax-token-stream/node-sax-token-stream/package.json",
     "name": "package.json",
     "static": true,

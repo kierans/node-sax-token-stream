@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 398,
+  "end": 834,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 18,
+      "line": 34,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 398,
+    "end": 834,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 18,
+        "line": 34,
         "column": 0
       }
     },
@@ -117,7 +117,7 @@
       {
         "type": "ImportDeclaration",
         "start": 70,
-        "end": 132,
+        "end": 138,
         "loc": {
           "start": {
             "line": 5,
@@ -125,14 +125,14 @@
           },
           "end": {
             "line": 5,
-            "column": 62
+            "column": 68
           }
         },
         "specifiers": [
           {
             "type": "ImportDefaultSpecifier",
             "start": 77,
-            "end": 92,
+            "end": 95,
             "loc": {
               "start": {
                 "line": 5,
@@ -140,13 +140,13 @@
               },
               "end": {
                 "line": 5,
-                "column": 22
+                "column": 25
               }
             },
             "local": {
               "type": "Identifier",
               "start": 77,
-              "end": 92,
+              "end": 95,
               "loc": {
                 "start": {
                   "line": 5,
@@ -154,6 +154,75 @@
                 },
                 "end": {
                   "line": 5,
+                  "column": 25
+                },
+                "identifierName": "Parse5EventAdaptor"
+              },
+              "name": "Parse5EventAdaptor"
+            }
+          }
+        ],
+        "source": {
+          "type": "StringLiteral",
+          "start": 101,
+          "end": 137,
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 31
+            },
+            "end": {
+              "line": 5,
+              "column": 67
+            }
+          },
+          "extra": {
+            "rawValue": "./adaptors/parse5-event-adaptor.js",
+            "raw": "\"./adaptors/parse5-event-adaptor.js\""
+          },
+          "value": "./adaptors/parse5-event-adaptor.js"
+        }
+      },
+      {
+        "type": "ImportDeclaration",
+        "start": 139,
+        "end": 201,
+        "loc": {
+          "start": {
+            "line": 6,
+            "column": 0
+          },
+          "end": {
+            "line": 6,
+            "column": 62
+          }
+        },
+        "specifiers": [
+          {
+            "type": "ImportDefaultSpecifier",
+            "start": 146,
+            "end": 161,
+            "loc": {
+              "start": {
+                "line": 6,
+                "column": 7
+              },
+              "end": {
+                "line": 6,
+                "column": 22
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 146,
+              "end": 161,
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 7
+                },
+                "end": {
+                  "line": 6,
                   "column": 22
                 },
                 "identifierName": "SAXEventAdaptor"
@@ -164,15 +233,15 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 98,
-          "end": 131,
+          "start": 167,
+          "end": 200,
           "loc": {
             "start": {
-              "line": 5,
+              "line": 6,
               "column": 28
             },
             "end": {
-              "line": 5,
+              "line": 6,
               "column": 61
             }
           },
@@ -185,16 +254,16 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * See the {@link SAXEventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @return {TokenisingStream}\n ",
-            "start": 134,
-            "end": 270,
+            "value": "*\n * See the {@link Parse5EventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @return {TokenisingStream}\n ",
+            "start": 203,
+            "end": 342,
             "loc": {
               "start": {
-                "line": 7,
+                "line": 8,
                 "column": 0
               },
               "end": {
-                "line": 12,
+                "line": 13,
                 "column": 3
               }
             }
@@ -203,15 +272,15 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 271,
-        "end": 397,
+        "start": 343,
+        "end": 568,
         "loc": {
           "start": {
-            "line": 13,
+            "line": 14,
             "column": 0
           },
           "end": {
-            "line": 17,
+            "line": 21,
             "column": 3
           }
         },
@@ -219,44 +288,502 @@
         "source": null,
         "declaration": {
           "type": "VariableDeclaration",
-          "start": 278,
-          "end": 397,
+          "start": 350,
+          "end": 568,
           "loc": {
             "start": {
-              "line": 13,
+              "line": 14,
               "column": 7
             },
             "end": {
-              "line": 17,
+              "line": 21,
               "column": 3
             }
           },
           "declarations": [
             {
               "type": "VariableDeclarator",
-              "start": 284,
-              "end": 397,
+              "start": 356,
+              "end": 568,
               "loc": {
                 "start": {
-                  "line": 13,
+                  "line": 14,
                   "column": 13
                 },
                 "end": {
-                  "line": 17,
+                  "line": 21,
                   "column": 3
                 }
               },
               "id": {
                 "type": "Identifier",
-                "start": 284,
-                "end": 296,
+                "start": 356,
+                "end": 371,
                 "loc": {
                   "start": {
-                    "line": 13,
+                    "line": 14,
                     "column": 13
                   },
                   "end": {
-                    "line": 13,
+                    "line": 14,
+                    "column": 28
+                  },
+                  "identifierName": "newParse5Stream"
+                },
+                "name": "newParse5Stream",
+                "leadingComments": null
+              },
+              "init": {
+                "type": "ArrowFunctionExpression",
+                "start": 374,
+                "end": 568,
+                "loc": {
+                  "start": {
+                    "line": 14,
+                    "column": 31
+                  },
+                  "end": {
+                    "line": 21,
+                    "column": 3
+                  }
+                },
+                "id": {
+                  "type": "Identifier",
+                  "start": 356,
+                  "end": 371,
+                  "loc": {
+                    "start": {
+                      "line": 14,
+                      "column": 13
+                    },
+                    "end": {
+                      "line": 14,
+                      "column": 28
+                    },
+                    "identifierName": "newParse5Stream"
+                  },
+                  "name": "newParse5Stream",
+                  "leadingComments": null
+                },
+                "generator": false,
+                "expression": true,
+                "async": false,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "start": 375,
+                    "end": 381,
+                    "loc": {
+                      "start": {
+                        "line": 14,
+                        "column": 32
+                      },
+                      "end": {
+                        "line": 14,
+                        "column": 38
+                      },
+                      "identifierName": "parser"
+                    },
+                    "name": "parser"
+                  }
+                ],
+                "body": {
+                  "type": "NewExpression",
+                  "start": 387,
+                  "end": 568,
+                  "loc": {
+                    "start": {
+                      "line": 15,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 21,
+                      "column": 3
+                    }
+                  },
+                  "callee": {
+                    "type": "Identifier",
+                    "start": 391,
+                    "end": 407,
+                    "loc": {
+                      "start": {
+                        "line": 15,
+                        "column": 5
+                      },
+                      "end": {
+                        "line": 15,
+                        "column": 21
+                      },
+                      "identifierName": "TokenisingStream"
+                    },
+                    "name": "TokenisingStream"
+                  },
+                  "arguments": [
+                    {
+                      "type": "ObjectExpression",
+                      "start": 408,
+                      "end": 567,
+                      "loc": {
+                        "start": {
+                          "line": 15,
+                          "column": 22
+                        },
+                        "end": {
+                          "line": 21,
+                          "column": 2
+                        }
+                      },
+                      "properties": [
+                        {
+                          "type": "ObjectProperty",
+                          "start": 412,
+                          "end": 428,
+                          "loc": {
+                            "start": {
+                              "line": 16,
+                              "column": 2
+                            },
+                            "end": {
+                              "line": 16,
+                              "column": 18
+                            }
+                          },
+                          "method": false,
+                          "shorthand": false,
+                          "computed": false,
+                          "key": {
+                            "type": "Identifier",
+                            "start": 412,
+                            "end": 420,
+                            "loc": {
+                              "start": {
+                                "line": 16,
+                                "column": 2
+                              },
+                              "end": {
+                                "line": 16,
+                                "column": 10
+                              },
+                              "identifierName": "delegate"
+                            },
+                            "name": "delegate"
+                          },
+                          "value": {
+                            "type": "Identifier",
+                            "start": 422,
+                            "end": 428,
+                            "loc": {
+                              "start": {
+                                "line": 16,
+                                "column": 12
+                              },
+                              "end": {
+                                "line": 16,
+                                "column": 18
+                              },
+                              "identifierName": "parser"
+                            },
+                            "name": "parser"
+                          }
+                        },
+                        {
+                          "type": "ObjectProperty",
+                          "start": 432,
+                          "end": 471,
+                          "loc": {
+                            "start": {
+                              "line": 17,
+                              "column": 2
+                            },
+                            "end": {
+                              "line": 17,
+                              "column": 41
+                            }
+                          },
+                          "method": false,
+                          "shorthand": false,
+                          "computed": false,
+                          "key": {
+                            "type": "Identifier",
+                            "start": 432,
+                            "end": 439,
+                            "loc": {
+                              "start": {
+                                "line": 17,
+                                "column": 2
+                              },
+                              "end": {
+                                "line": 17,
+                                "column": 9
+                              },
+                              "identifierName": "adaptor"
+                            },
+                            "name": "adaptor"
+                          },
+                          "value": {
+                            "type": "NewExpression",
+                            "start": 441,
+                            "end": 471,
+                            "loc": {
+                              "start": {
+                                "line": 17,
+                                "column": 11
+                              },
+                              "end": {
+                                "line": 17,
+                                "column": 41
+                              }
+                            },
+                            "callee": {
+                              "type": "Identifier",
+                              "start": 445,
+                              "end": 463,
+                              "loc": {
+                                "start": {
+                                  "line": 17,
+                                  "column": 15
+                                },
+                                "end": {
+                                  "line": 17,
+                                  "column": 33
+                                },
+                                "identifierName": "Parse5EventAdaptor"
+                              },
+                              "name": "Parse5EventAdaptor"
+                            },
+                            "arguments": [
+                              {
+                                "type": "Identifier",
+                                "start": 464,
+                                "end": 470,
+                                "loc": {
+                                  "start": {
+                                    "line": 17,
+                                    "column": 34
+                                  },
+                                  "end": {
+                                    "line": 17,
+                                    "column": 40
+                                  },
+                                  "identifierName": "parser"
+                                },
+                                "name": "parser"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "type": "ObjectProperty",
+                          "start": 544,
+                          "end": 564,
+                          "loc": {
+                            "start": {
+                              "line": 20,
+                              "column": 2
+                            },
+                            "end": {
+                              "line": 20,
+                              "column": 22
+                            }
+                          },
+                          "method": false,
+                          "shorthand": false,
+                          "computed": false,
+                          "key": {
+                            "type": "Identifier",
+                            "start": 544,
+                            "end": 557,
+                            "loc": {
+                              "start": {
+                                "line": 20,
+                                "column": 2
+                              },
+                              "end": {
+                                "line": 20,
+                                "column": 15
+                              },
+                              "identifierName": "decodeStrings"
+                            },
+                            "name": "decodeStrings",
+                            "leadingComments": null
+                          },
+                          "value": {
+                            "type": "BooleanLiteral",
+                            "start": 559,
+                            "end": 564,
+                            "loc": {
+                              "start": {
+                                "line": 20,
+                                "column": 17
+                              },
+                              "end": {
+                                "line": 20,
+                                "column": 22
+                              }
+                            },
+                            "value": false
+                          },
+                          "leadingComments": [
+                            {
+                              "type": "CommentLine",
+                              "value": " parse5 parser Writable can only work with strings not Buffers.",
+                              "start": 476,
+                              "end": 541,
+                              "loc": {
+                                "start": {
+                                  "line": 19,
+                                  "column": 2
+                                },
+                                "end": {
+                                  "line": 19,
+                                  "column": 67
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "trailingComments": null
+                },
+                "trailingComments": null
+              },
+              "leadingComments": null,
+              "trailingComments": null
+            }
+          ],
+          "kind": "const",
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * See the {@link Parse5EventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @return {TokenisingStream}\n ",
+              "start": 203,
+              "end": 342,
+              "loc": {
+                "start": {
+                  "line": 8,
+                  "column": 0
+                },
+                "end": {
+                  "line": 13,
+                  "column": 3
+                }
+              }
+            }
+          ],
+          "trailingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * See the {@link SAXEventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @return {TokenisingStream}\n ",
+              "start": 570,
+              "end": 706,
+              "loc": {
+                "start": {
+                  "line": 23,
+                  "column": 0
+                },
+                "end": {
+                  "line": 28,
+                  "column": 3
+                }
+              }
+            }
+          ]
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * See the {@link Parse5EventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @return {TokenisingStream}\n ",
+            "start": 203,
+            "end": 342,
+            "loc": {
+              "start": {
+                "line": 8,
+                "column": 0
+              },
+              "end": {
+                "line": 13,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * See the {@link SAXEventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @return {TokenisingStream}\n ",
+            "start": 570,
+            "end": 706,
+            "loc": {
+              "start": {
+                "line": 23,
+                "column": 0
+              },
+              "end": {
+                "line": 28,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 707,
+        "end": 833,
+        "loc": {
+          "start": {
+            "line": 29,
+            "column": 0
+          },
+          "end": {
+            "line": 33,
+            "column": 3
+          }
+        },
+        "specifiers": [],
+        "source": null,
+        "declaration": {
+          "type": "VariableDeclaration",
+          "start": 714,
+          "end": 833,
+          "loc": {
+            "start": {
+              "line": 29,
+              "column": 7
+            },
+            "end": {
+              "line": 33,
+              "column": 3
+            }
+          },
+          "declarations": [
+            {
+              "type": "VariableDeclarator",
+              "start": 720,
+              "end": 833,
+              "loc": {
+                "start": {
+                  "line": 29,
+                  "column": 13
+                },
+                "end": {
+                  "line": 33,
+                  "column": 3
+                }
+              },
+              "id": {
+                "type": "Identifier",
+                "start": 720,
+                "end": 732,
+                "loc": {
+                  "start": {
+                    "line": 29,
+                    "column": 13
+                  },
+                  "end": {
+                    "line": 29,
                     "column": 25
                   },
                   "identifierName": "newSAXStream"
@@ -266,29 +793,29 @@
               },
               "init": {
                 "type": "ArrowFunctionExpression",
-                "start": 299,
-                "end": 397,
+                "start": 735,
+                "end": 833,
                 "loc": {
                   "start": {
-                    "line": 13,
+                    "line": 29,
                     "column": 28
                   },
                   "end": {
-                    "line": 17,
+                    "line": 33,
                     "column": 3
                   }
                 },
                 "id": {
                   "type": "Identifier",
-                  "start": 284,
-                  "end": 296,
+                  "start": 720,
+                  "end": 732,
                   "loc": {
                     "start": {
-                      "line": 13,
+                      "line": 29,
                       "column": 13
                     },
                     "end": {
-                      "line": 13,
+                      "line": 29,
                       "column": 25
                     },
                     "identifierName": "newSAXStream"
@@ -302,15 +829,15 @@
                 "params": [
                   {
                     "type": "Identifier",
-                    "start": 300,
-                    "end": 306,
+                    "start": 736,
+                    "end": 742,
                     "loc": {
                       "start": {
-                        "line": 13,
+                        "line": 29,
                         "column": 29
                       },
                       "end": {
-                        "line": 13,
+                        "line": 29,
                         "column": 35
                       },
                       "identifierName": "parser"
@@ -320,29 +847,29 @@
                 ],
                 "body": {
                   "type": "NewExpression",
-                  "start": 312,
-                  "end": 397,
+                  "start": 748,
+                  "end": 833,
                   "loc": {
                     "start": {
-                      "line": 14,
+                      "line": 30,
                       "column": 1
                     },
                     "end": {
-                      "line": 17,
+                      "line": 33,
                       "column": 3
                     }
                   },
                   "callee": {
                     "type": "Identifier",
-                    "start": 316,
-                    "end": 332,
+                    "start": 752,
+                    "end": 768,
                     "loc": {
                       "start": {
-                        "line": 14,
+                        "line": 30,
                         "column": 5
                       },
                       "end": {
-                        "line": 14,
+                        "line": 30,
                         "column": 21
                       },
                       "identifierName": "TokenisingStream"
@@ -352,30 +879,30 @@
                   "arguments": [
                     {
                       "type": "ObjectExpression",
-                      "start": 333,
-                      "end": 396,
+                      "start": 769,
+                      "end": 832,
                       "loc": {
                         "start": {
-                          "line": 14,
+                          "line": 30,
                           "column": 22
                         },
                         "end": {
-                          "line": 17,
+                          "line": 33,
                           "column": 2
                         }
                       },
                       "properties": [
                         {
                           "type": "ObjectProperty",
-                          "start": 337,
-                          "end": 353,
+                          "start": 773,
+                          "end": 789,
                           "loc": {
                             "start": {
-                              "line": 15,
+                              "line": 31,
                               "column": 2
                             },
                             "end": {
-                              "line": 15,
+                              "line": 31,
                               "column": 18
                             }
                           },
@@ -384,15 +911,15 @@
                           "computed": false,
                           "key": {
                             "type": "Identifier",
-                            "start": 337,
-                            "end": 345,
+                            "start": 773,
+                            "end": 781,
                             "loc": {
                               "start": {
-                                "line": 15,
+                                "line": 31,
                                 "column": 2
                               },
                               "end": {
-                                "line": 15,
+                                "line": 31,
                                 "column": 10
                               },
                               "identifierName": "delegate"
@@ -401,15 +928,15 @@
                           },
                           "value": {
                             "type": "Identifier",
-                            "start": 347,
-                            "end": 353,
+                            "start": 783,
+                            "end": 789,
                             "loc": {
                               "start": {
-                                "line": 15,
+                                "line": 31,
                                 "column": 12
                               },
                               "end": {
-                                "line": 15,
+                                "line": 31,
                                 "column": 18
                               },
                               "identifierName": "parser"
@@ -419,15 +946,15 @@
                         },
                         {
                           "type": "ObjectProperty",
-                          "start": 357,
-                          "end": 393,
+                          "start": 793,
+                          "end": 829,
                           "loc": {
                             "start": {
-                              "line": 16,
+                              "line": 32,
                               "column": 2
                             },
                             "end": {
-                              "line": 16,
+                              "line": 32,
                               "column": 38
                             }
                           },
@@ -436,15 +963,15 @@
                           "computed": false,
                           "key": {
                             "type": "Identifier",
-                            "start": 357,
-                            "end": 364,
+                            "start": 793,
+                            "end": 800,
                             "loc": {
                               "start": {
-                                "line": 16,
+                                "line": 32,
                                 "column": 2
                               },
                               "end": {
-                                "line": 16,
+                                "line": 32,
                                 "column": 9
                               },
                               "identifierName": "adaptor"
@@ -453,29 +980,29 @@
                           },
                           "value": {
                             "type": "NewExpression",
-                            "start": 366,
-                            "end": 393,
+                            "start": 802,
+                            "end": 829,
                             "loc": {
                               "start": {
-                                "line": 16,
+                                "line": 32,
                                 "column": 11
                               },
                               "end": {
-                                "line": 16,
+                                "line": 32,
                                 "column": 38
                               }
                             },
                             "callee": {
                               "type": "Identifier",
-                              "start": 370,
-                              "end": 385,
+                              "start": 806,
+                              "end": 821,
                               "loc": {
                                 "start": {
-                                  "line": 16,
+                                  "line": 32,
                                   "column": 15
                                 },
                                 "end": {
-                                  "line": 16,
+                                  "line": 32,
                                   "column": 30
                                 },
                                 "identifierName": "SAXEventAdaptor"
@@ -485,15 +1012,15 @@
                             "arguments": [
                               {
                                 "type": "Identifier",
-                                "start": 386,
-                                "end": 392,
+                                "start": 822,
+                                "end": 828,
                                 "loc": {
                                   "start": {
-                                    "line": 16,
+                                    "line": 32,
                                     "column": 31
                                   },
                                   "end": {
-                                    "line": 16,
+                                    "line": 32,
                                     "column": 37
                                   },
                                   "identifierName": "parser"
@@ -516,15 +1043,15 @@
             {
               "type": "CommentBlock",
               "value": "*\n * See the {@link SAXEventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @return {TokenisingStream}\n ",
-              "start": 134,
-              "end": 270,
+              "start": 570,
+              "end": 706,
               "loc": {
                 "start": {
-                  "line": 7,
+                  "line": 23,
                   "column": 0
                 },
                 "end": {
-                  "line": 12,
+                  "line": 28,
                   "column": 3
                 }
               }
@@ -536,15 +1063,15 @@
           {
             "type": "CommentBlock",
             "value": "*\n * See the {@link SAXEventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @return {TokenisingStream}\n ",
-            "start": 134,
-            "end": 270,
+            "start": 570,
+            "end": 706,
             "loc": {
               "start": {
-                "line": 7,
+                "line": 23,
                 "column": 0
               },
               "end": {
-                "line": 12,
+                "line": 28,
                 "column": 3
               }
             }
@@ -593,16 +1120,48 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\n * See the {@link SAXEventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @return {TokenisingStream}\n ",
-      "start": 134,
-      "end": 270,
+      "value": "*\n * See the {@link Parse5EventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @return {TokenisingStream}\n ",
+      "start": 203,
+      "end": 342,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 8,
           "column": 0
         },
         "end": {
-          "line": 12,
+          "line": 13,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " parse5 parser Writable can only work with strings not Buffers.",
+      "start": 476,
+      "end": 541,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 2
+        },
+        "end": {
+          "line": 19,
+          "column": 67
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * See the {@link SAXEventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @return {TokenisingStream}\n ",
+      "start": 570,
+      "end": 706,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 0
+        },
+        "end": {
+          "line": 28,
           "column": 3
         }
       }
@@ -885,9 +1444,9 @@
         "postfix": false,
         "binop": null
       },
-      "value": "SAXEventAdaptor",
+      "value": "Parse5EventAdaptor",
       "start": 77,
-      "end": 92,
+      "end": 95,
       "loc": {
         "start": {
           "line": 5,
@@ -895,6 +1454,139 @@
         },
         "end": {
           "line": 5,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "from",
+      "start": 96,
+      "end": 100,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 26
+        },
+        "end": {
+          "line": 5,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "./adaptors/parse5-event-adaptor.js",
+      "start": 101,
+      "end": 137,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 31
+        },
+        "end": {
+          "line": 5,
+          "column": 67
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 137,
+      "end": 138,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 67
+        },
+        "end": {
+          "line": 5,
+          "column": 68
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "import",
+        "keyword": "import",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "import",
+      "start": 139,
+      "end": 145,
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 0
+        },
+        "end": {
+          "line": 6,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "SAXEventAdaptor",
+      "start": 146,
+      "end": 161,
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 7
+        },
+        "end": {
+          "line": 6,
           "column": 22
         }
       }
@@ -912,15 +1604,15 @@
         "binop": null
       },
       "value": "from",
-      "start": 93,
-      "end": 97,
+      "start": 162,
+      "end": 166,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 6,
           "column": 23
         },
         "end": {
-          "line": 5,
+          "line": 6,
           "column": 27
         }
       }
@@ -939,15 +1631,15 @@
         "updateContext": null
       },
       "value": "./adaptors/sax-event-adaptor.js",
-      "start": 98,
-      "end": 131,
+      "start": 167,
+      "end": 200,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 6,
           "column": 28
         },
         "end": {
-          "line": 5,
+          "line": 6,
           "column": 61
         }
       }
@@ -965,31 +1657,31 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 131,
-      "end": 132,
+      "start": 200,
+      "end": 201,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 6,
           "column": 61
         },
         "end": {
-          "line": 5,
+          "line": 6,
           "column": 62
         }
       }
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * See the {@link SAXEventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @return {TokenisingStream}\n ",
-      "start": 134,
-      "end": 270,
+      "value": "*\n * See the {@link Parse5EventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @return {TokenisingStream}\n ",
+      "start": 203,
+      "end": 342,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 8,
           "column": 0
         },
         "end": {
-          "line": 12,
+          "line": 13,
           "column": 3
         }
       }
@@ -1009,15 +1701,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 271,
-      "end": 277,
+      "start": 343,
+      "end": 349,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 14,
           "column": 0
         },
         "end": {
-          "line": 13,
+          "line": 14,
           "column": 6
         }
       }
@@ -1037,15 +1729,804 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 278,
-      "end": 283,
+      "start": 350,
+      "end": 355,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 14,
           "column": 7
         },
         "end": {
-          "line": 13,
+          "line": 14,
+          "column": 12
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "newParse5Stream",
+      "start": 356,
+      "end": 371,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 13
+        },
+        "end": {
+          "line": 14,
+          "column": 28
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 372,
+      "end": 373,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 29
+        },
+        "end": {
+          "line": 14,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 374,
+      "end": 375,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 31
+        },
+        "end": {
+          "line": 14,
+          "column": 32
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "parser",
+      "start": 375,
+      "end": 381,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 32
+        },
+        "end": {
+          "line": 14,
+          "column": 38
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 381,
+      "end": 382,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 38
+        },
+        "end": {
+          "line": 14,
+          "column": 39
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=>",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 383,
+      "end": 385,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 40
+        },
+        "end": {
+          "line": 14,
+          "column": 42
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "new",
+        "keyword": "new",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "new",
+      "start": 387,
+      "end": 390,
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 1
+        },
+        "end": {
+          "line": 15,
+          "column": 4
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "TokenisingStream",
+      "start": 391,
+      "end": 407,
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 5
+        },
+        "end": {
+          "line": 15,
+          "column": 21
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 407,
+      "end": 408,
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 21
+        },
+        "end": {
+          "line": 15,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 408,
+      "end": 409,
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 22
+        },
+        "end": {
+          "line": 15,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "delegate",
+      "start": 412,
+      "end": 420,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 2
+        },
+        "end": {
+          "line": 16,
+          "column": 10
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 420,
+      "end": 421,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 10
+        },
+        "end": {
+          "line": 16,
+          "column": 11
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "parser",
+      "start": 422,
+      "end": 428,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 12
+        },
+        "end": {
+          "line": 16,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 428,
+      "end": 429,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 18
+        },
+        "end": {
+          "line": 16,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "adaptor",
+      "start": 432,
+      "end": 439,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 2
+        },
+        "end": {
+          "line": 17,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 439,
+      "end": 440,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 9
+        },
+        "end": {
+          "line": 17,
+          "column": 10
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "new",
+        "keyword": "new",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "new",
+      "start": 441,
+      "end": 444,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 11
+        },
+        "end": {
+          "line": 17,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "Parse5EventAdaptor",
+      "start": 445,
+      "end": 463,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 15
+        },
+        "end": {
+          "line": 17,
+          "column": 33
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 463,
+      "end": 464,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 33
+        },
+        "end": {
+          "line": 17,
+          "column": 34
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "parser",
+      "start": 464,
+      "end": 470,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 34
+        },
+        "end": {
+          "line": 17,
+          "column": 40
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 470,
+      "end": 471,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 40
+        },
+        "end": {
+          "line": 17,
+          "column": 41
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 471,
+      "end": 472,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 41
+        },
+        "end": {
+          "line": 17,
+          "column": 42
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " parse5 parser Writable can only work with strings not Buffers.",
+      "start": 476,
+      "end": 541,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 2
+        },
+        "end": {
+          "line": 19,
+          "column": 67
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "decodeStrings",
+      "start": 544,
+      "end": 557,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 2
+        },
+        "end": {
+          "line": 20,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 557,
+      "end": 558,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 15
+        },
+        "end": {
+          "line": 20,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "false",
+        "keyword": "false",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "false",
+      "start": 559,
+      "end": 564,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 17
+        },
+        "end": {
+          "line": 20,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 566,
+      "end": 567,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 1
+        },
+        "end": {
+          "line": 21,
+          "column": 2
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 567,
+      "end": 568,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 2
+        },
+        "end": {
+          "line": 21,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * See the {@link SAXEventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @return {TokenisingStream}\n ",
+      "start": 570,
+      "end": 706,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 0
+        },
+        "end": {
+          "line": 28,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 707,
+      "end": 713,
+      "loc": {
+        "start": {
+          "line": 29,
+          "column": 0
+        },
+        "end": {
+          "line": 29,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "const",
+        "keyword": "const",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "const",
+      "start": 714,
+      "end": 719,
+      "loc": {
+        "start": {
+          "line": 29,
+          "column": 7
+        },
+        "end": {
+          "line": 29,
           "column": 12
         }
       }
@@ -1063,15 +2544,15 @@
         "binop": null
       },
       "value": "newSAXStream",
-      "start": 284,
-      "end": 296,
+      "start": 720,
+      "end": 732,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 29,
           "column": 13
         },
         "end": {
-          "line": 13,
+          "line": 29,
           "column": 25
         }
       }
@@ -1090,15 +2571,15 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 297,
-      "end": 298,
+      "start": 733,
+      "end": 734,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 29,
           "column": 26
         },
         "end": {
-          "line": 13,
+          "line": 29,
           "column": 27
         }
       }
@@ -1115,15 +2596,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 299,
-      "end": 300,
+      "start": 735,
+      "end": 736,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 29,
           "column": 28
         },
         "end": {
-          "line": 13,
+          "line": 29,
           "column": 29
         }
       }
@@ -1141,15 +2622,15 @@
         "binop": null
       },
       "value": "parser",
-      "start": 300,
-      "end": 306,
+      "start": 736,
+      "end": 742,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 29,
           "column": 29
         },
         "end": {
-          "line": 13,
+          "line": 29,
           "column": 35
         }
       }
@@ -1166,15 +2647,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 306,
-      "end": 307,
+      "start": 742,
+      "end": 743,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 29,
           "column": 35
         },
         "end": {
-          "line": 13,
+          "line": 29,
           "column": 36
         }
       }
@@ -1192,15 +2673,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 308,
-      "end": 310,
+      "start": 744,
+      "end": 746,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 29,
           "column": 37
         },
         "end": {
-          "line": 13,
+          "line": 29,
           "column": 39
         }
       }
@@ -1220,15 +2701,15 @@
         "updateContext": null
       },
       "value": "new",
-      "start": 312,
-      "end": 315,
+      "start": 748,
+      "end": 751,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 30,
           "column": 1
         },
         "end": {
-          "line": 14,
+          "line": 30,
           "column": 4
         }
       }
@@ -1246,15 +2727,15 @@
         "binop": null
       },
       "value": "TokenisingStream",
-      "start": 316,
-      "end": 332,
+      "start": 752,
+      "end": 768,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 30,
           "column": 5
         },
         "end": {
-          "line": 14,
+          "line": 30,
           "column": 21
         }
       }
@@ -1271,15 +2752,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 332,
-      "end": 333,
+      "start": 768,
+      "end": 769,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 30,
           "column": 21
         },
         "end": {
-          "line": 14,
+          "line": 30,
           "column": 22
         }
       }
@@ -1296,15 +2777,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 333,
-      "end": 334,
+      "start": 769,
+      "end": 770,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 30,
           "column": 22
         },
         "end": {
-          "line": 14,
+          "line": 30,
           "column": 23
         }
       }
@@ -1322,15 +2803,15 @@
         "binop": null
       },
       "value": "delegate",
-      "start": 337,
-      "end": 345,
+      "start": 773,
+      "end": 781,
       "loc": {
         "start": {
-          "line": 15,
+          "line": 31,
           "column": 2
         },
         "end": {
-          "line": 15,
+          "line": 31,
           "column": 10
         }
       }
@@ -1348,15 +2829,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 345,
-      "end": 346,
+      "start": 781,
+      "end": 782,
       "loc": {
         "start": {
-          "line": 15,
+          "line": 31,
           "column": 10
         },
         "end": {
-          "line": 15,
+          "line": 31,
           "column": 11
         }
       }
@@ -1374,15 +2855,15 @@
         "binop": null
       },
       "value": "parser",
-      "start": 347,
-      "end": 353,
+      "start": 783,
+      "end": 789,
       "loc": {
         "start": {
-          "line": 15,
+          "line": 31,
           "column": 12
         },
         "end": {
-          "line": 15,
+          "line": 31,
           "column": 18
         }
       }
@@ -1400,15 +2881,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 353,
-      "end": 354,
+      "start": 789,
+      "end": 790,
       "loc": {
         "start": {
-          "line": 15,
+          "line": 31,
           "column": 18
         },
         "end": {
-          "line": 15,
+          "line": 31,
           "column": 19
         }
       }
@@ -1426,15 +2907,15 @@
         "binop": null
       },
       "value": "adaptor",
-      "start": 357,
-      "end": 364,
+      "start": 793,
+      "end": 800,
       "loc": {
         "start": {
-          "line": 16,
+          "line": 32,
           "column": 2
         },
         "end": {
-          "line": 16,
+          "line": 32,
           "column": 9
         }
       }
@@ -1452,15 +2933,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 364,
-      "end": 365,
+      "start": 800,
+      "end": 801,
       "loc": {
         "start": {
-          "line": 16,
+          "line": 32,
           "column": 9
         },
         "end": {
-          "line": 16,
+          "line": 32,
           "column": 10
         }
       }
@@ -1480,15 +2961,15 @@
         "updateContext": null
       },
       "value": "new",
-      "start": 366,
-      "end": 369,
+      "start": 802,
+      "end": 805,
       "loc": {
         "start": {
-          "line": 16,
+          "line": 32,
           "column": 11
         },
         "end": {
-          "line": 16,
+          "line": 32,
           "column": 14
         }
       }
@@ -1506,15 +2987,15 @@
         "binop": null
       },
       "value": "SAXEventAdaptor",
-      "start": 370,
-      "end": 385,
+      "start": 806,
+      "end": 821,
       "loc": {
         "start": {
-          "line": 16,
+          "line": 32,
           "column": 15
         },
         "end": {
-          "line": 16,
+          "line": 32,
           "column": 30
         }
       }
@@ -1531,15 +3012,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 385,
-      "end": 386,
+      "start": 821,
+      "end": 822,
       "loc": {
         "start": {
-          "line": 16,
+          "line": 32,
           "column": 30
         },
         "end": {
-          "line": 16,
+          "line": 32,
           "column": 31
         }
       }
@@ -1557,15 +3038,15 @@
         "binop": null
       },
       "value": "parser",
-      "start": 386,
-      "end": 392,
+      "start": 822,
+      "end": 828,
       "loc": {
         "start": {
-          "line": 16,
+          "line": 32,
           "column": 31
         },
         "end": {
-          "line": 16,
+          "line": 32,
           "column": 37
         }
       }
@@ -1582,15 +3063,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 392,
-      "end": 393,
+      "start": 828,
+      "end": 829,
       "loc": {
         "start": {
-          "line": 16,
+          "line": 32,
           "column": 37
         },
         "end": {
-          "line": 16,
+          "line": 32,
           "column": 38
         }
       }
@@ -1607,15 +3088,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 395,
-      "end": 396,
+      "start": 831,
+      "end": 832,
       "loc": {
         "start": {
-          "line": 17,
+          "line": 33,
           "column": 1
         },
         "end": {
-          "line": 17,
+          "line": 33,
           "column": 2
         }
       }
@@ -1632,15 +3113,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 396,
-      "end": 397,
+      "start": 832,
+      "end": 833,
       "loc": {
         "start": {
-          "line": 17,
+          "line": 33,
           "column": 2
         },
         "end": {
-          "line": 17,
+          "line": 33,
           "column": 3
         }
       }
@@ -1658,15 +3139,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 398,
-      "end": 398,
+      "start": 834,
+      "end": 834,
       "loc": {
         "start": {
-          "line": 18,
+          "line": 34,
           "column": 0
         },
         "end": {
-          "line": 18,
+          "line": 34,
           "column": 0
         }
       }

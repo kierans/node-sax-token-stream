@@ -1,8 +1,13 @@
 {
   "coverage": "100%",
-  "expectCount": 4,
-  "actualCount": 4,
+  "expectCount": 7,
+  "actualCount": 7,
   "files": {
+    "src/adaptors/parse5-event-adaptor.js": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    },
     "src/adaptors/sax-event-adaptor.js": {
       "expectCount": 2,
       "actualCount": 2,
@@ -14,8 +19,8 @@
       "undocumentLines": []
     },
     "src/index.js": {
-      "expectCount": 1,
-      "actualCount": 1,
+      "expectCount": 2,
+      "actualCount": 2,
       "undocumentLines": []
     }
   }

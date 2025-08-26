@@ -1,9 +1,21 @@
 window.esdocSearchIndex = [
   [
+    "sax-token-stream/src/adaptors/parse5-event-adaptor.js~parse5eventadaptor",
+    "class/src/adaptors/parse5-event-adaptor.js~Parse5EventAdaptor.html",
+    "<span>Parse5EventAdaptor</span> <span class=\"search-result-import-path\">sax-token-stream/src/adaptors/parse5-event-adaptor.js</span>",
+    "class"
+  ],
+  [
     "sax-token-stream/src/adaptors/sax-event-adaptor.js~saxeventadaptor",
     "class/src/adaptors/sax-event-adaptor.js~SAXEventAdaptor.html",
     "<span>SAXEventAdaptor</span> <span class=\"search-result-import-path\">sax-token-stream/src/adaptors/sax-event-adaptor.js</span>",
     "class"
+  ],
+  [
+    "sax-token-stream~newparse5stream",
+    "function/index.html#static-function-newParse5Stream",
+    "<span>newParse5Stream</span> <span class=\"search-result-import-path\">sax-token-stream</span>",
+    "function"
   ],
   [
     "sax-token-stream~newsaxstream",
@@ -292,6 +304,54 @@ window.esdocSearchIndex = [
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
     "src/.external-ecmascript.js~undefined",
     "external"
+  ],
+  [
+    "src/adaptors/parse5-event-adaptor.js",
+    "file/src/adaptors/parse5-event-adaptor.js.html",
+    "src/adaptors/parse5-event-adaptor.js",
+    "file"
+  ],
+  [
+    "src/adaptors/parse5-event-adaptor.js~parse5eventadaptor#constructor",
+    "class/src/adaptors/parse5-event-adaptor.js~Parse5EventAdaptor.html#instance-constructor-constructor",
+    "src/adaptors/parse5-event-adaptor.js~Parse5EventAdaptor#constructor",
+    "method"
+  ],
+  [
+    "src/adaptors/parse5-event-adaptor.js~parse5eventadaptor~commenttoken",
+    "typedef/index.html#static-typedef-Parse5EventAdaptor~CommentToken",
+    "src/adaptors/parse5-event-adaptor.js~Parse5EventAdaptor~CommentToken",
+    "typedef"
+  ],
+  [
+    "src/adaptors/parse5-event-adaptor.js~parse5eventadaptor~doctypetoken",
+    "typedef/index.html#static-typedef-Parse5EventAdaptor~DoctypeToken",
+    "src/adaptors/parse5-event-adaptor.js~Parse5EventAdaptor~DoctypeToken",
+    "typedef"
+  ],
+  [
+    "src/adaptors/parse5-event-adaptor.js~parse5eventadaptor~endtagtoken",
+    "typedef/index.html#static-typedef-Parse5EventAdaptor~EndTagToken",
+    "src/adaptors/parse5-event-adaptor.js~Parse5EventAdaptor~EndTagToken",
+    "typedef"
+  ],
+  [
+    "src/adaptors/parse5-event-adaptor.js~parse5eventadaptor~parse5token",
+    "typedef/index.html#static-typedef-Parse5EventAdaptor~Parse5Token",
+    "src/adaptors/parse5-event-adaptor.js~Parse5EventAdaptor~Parse5Token",
+    "typedef"
+  ],
+  [
+    "src/adaptors/parse5-event-adaptor.js~parse5eventadaptor~starttagtoken",
+    "typedef/index.html#static-typedef-Parse5EventAdaptor~StartTagToken",
+    "src/adaptors/parse5-event-adaptor.js~Parse5EventAdaptor~StartTagToken",
+    "typedef"
+  ],
+  [
+    "src/adaptors/parse5-event-adaptor.js~parse5eventadaptor~texttoken",
+    "typedef/index.html#static-typedef-Parse5EventAdaptor~TextToken",
+    "src/adaptors/parse5-event-adaptor.js~Parse5EventAdaptor~TextToken",
+    "typedef"
   ],
   [
     "src/adaptors/sax-event-adaptor.js",

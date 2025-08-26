@@ -29,8 +29,16 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-newSAXStream">newSAXStream</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#adaptors">adaptors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/adaptors/sax-event-adaptor.js~SAXEventAdaptor.html">SAXEventAdaptor</a></span></span></li>
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-newParse5Stream">newParse5Stream</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-newSAXStream">newSAXStream</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#adaptors">adaptors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/adaptors/parse5-event-adaptor.js~Parse5EventAdaptor.html">Parse5EventAdaptor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/adaptors/sax-event-adaptor.js~SAXEventAdaptor.html">SAXEventAdaptor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Parse5EventAdaptor~CommentToken">Parse5EventAdaptor~CommentToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Parse5EventAdaptor~DoctypeToken">Parse5EventAdaptor~DoctypeToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Parse5EventAdaptor~EndTagToken">Parse5EventAdaptor~EndTagToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Parse5EventAdaptor~Parse5Token">Parse5EventAdaptor~Parse5Token</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Parse5EventAdaptor~StartTagToken">Parse5EventAdaptor~StartTagToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Parse5EventAdaptor~TextToken">Parse5EventAdaptor~TextToken</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~AttributeToken">SAXEventAdaptor~AttributeToken</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~CDataToken">SAXEventAdaptor~CDataToken</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~CloseCDataToken">SAXEventAdaptor~CloseCDataToken</a></span></span></li>
@@ -63,6 +71,35 @@
   <tbody>
   
   <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-function">F</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-newParse5Stream">newParse5Stream</a></span></span><span class="code" data-ice="signature">(parser: <span>Writable</span>): <span>TokenisingStream</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>See the <span><a href="class/src/adaptors/parse5-event-adaptor.js~Parse5EventAdaptor.html">Parse5EventAdaptor</a></span> documentation for token details.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
     <td>
       <span class="access" data-ice="access">public</span>
       
@@ -115,6 +152,35 @@
           <span data-ice="kind-icon" class="kind-class">C</span>
           
           
+          <span class="code" data-ice="name"><span><a href="class/src/adaptors/parse5-event-adaptor.js~Parse5EventAdaptor.html">Parse5EventAdaptor</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>EventAdaptor for Parse5 SAX parser.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
           <span class="code" data-ice="name"><span><a href="class/src/adaptors/sax-event-adaptor.js~SAXEventAdaptor.html">SAXEventAdaptor</a></span></span>
         </p>
       </div>
@@ -123,6 +189,174 @@
         
         <div data-ice="description"><p>EventAdaptor for SAX parser.</p>
 </div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-typedef">T</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="typedef/index.html#static-typedef-Parse5EventAdaptor~CommentToken">Parse5EventAdaptor~CommentToken</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-typedef">T</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="typedef/index.html#static-typedef-Parse5EventAdaptor~DoctypeToken">Parse5EventAdaptor~DoctypeToken</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-typedef">T</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="typedef/index.html#static-typedef-Parse5EventAdaptor~EndTagToken">Parse5EventAdaptor~EndTagToken</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-typedef">T</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="typedef/index.html#static-typedef-Parse5EventAdaptor~Parse5Token">Parse5EventAdaptor~Parse5Token</a></span></span><span class="code" data-ice="signature">: <span><a href="typedef/index.html#static-typedef-Parse5EventAdaptor~CommentToken">Parse5EventAdaptor~CommentToken</a></span> | <span><a href="typedef/index.html#static-typedef-Parse5EventAdaptor~DoctypeToken">Parse5EventAdaptor~DoctypeToken</a></span> | <span><a href="typedef/index.html#static-typedef-Parse5EventAdaptor~EndTagToken">Parse5EventAdaptor~EndTagToken</a></span> | <span><a href="typedef/index.html#static-typedef-Parse5EventAdaptor~StartTagToken">Parse5EventAdaptor~StartTagToken</a></span> | <span><a href="typedef/index.html#static-typedef-Parse5EventAdaptor~TextToken">Parse5EventAdaptor~TextToken</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-typedef">T</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="typedef/index.html#static-typedef-Parse5EventAdaptor~StartTagToken">Parse5EventAdaptor~StartTagToken</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-typedef">T</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="typedef/index.html#static-typedef-Parse5EventAdaptor~TextToken">Parse5EventAdaptor~TextToken</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
       </div>
     </td>
     <td>
