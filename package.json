@@ -37,9 +37,11 @@
     "esdoc-standard-plugin": "^1.0.0",
     "hamjest": "^4.1.0",
     "mocha": "^11.7.1",
+    "parse5-sax-parser": "^8.0.0",
     "sax": "^1.4.1"
   },
   "peerDependencies": {
+    "parse5-sax-parser": "^8.0.0",
     "sax": "^1.4.1"
   },
   "dependencies": {
