@@ -4,6 +4,9 @@
 	"plugins": [
 		{
 			"name": "esdoc-standard-plugin"
+		},
+		{
+			"name": "./tools/esdoc-remove-updated-plugin.cjs"
 		}
 	]
 }
