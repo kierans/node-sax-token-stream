@@ -46,7 +46,13 @@ $ npm install <parser-library>
 ```
 
 ```javascript
-// TODO
+import { newSAXStream } from "sax-token-stream";
+
+const input = createInputStream()
+const stream = newSAXStream(sax.createStream(true, { xmlns: true }))
+const output = createOutputStream();
+
+input.pipe(stream).pipe(output);
 ```
 
 ## Tests
