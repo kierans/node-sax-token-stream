@@ -126,7 +126,7 @@ import { assign2 } from "./utils.js";
  *   <li><b>text</b> - {@link SAXEventAdaptor~TextToken}</li>
  * </ul>
  *
- * @implements EventAdaptor
+ * @implements {EventAdaptor}
  * @see https://www.npmjs.com/package/sax
  */
 export default class SAXEventAdaptor extends EventEmitter {

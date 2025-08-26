@@ -8,7 +8,7 @@ import SAXEventAdaptor from "./adaptors/sax-event-adaptor.js";
  * See the {@link SAXEventAdaptor} documentation for token details.
  *
  * @param {Writable} parser
- * @returns TokenisingStream
+ * @return {TokenisingStream}
  */
 export const newSAXStream = (parser) =>
 	new TokenisingStream({
