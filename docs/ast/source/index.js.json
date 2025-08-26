@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 397,
+  "end": 398,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 397,
+    "end": 398,
     "loc": {
       "start": {
         "line": 1,
@@ -185,9 +185,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * See the {@link SAXEventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @returns TokenisingStream\n ",
+            "value": "*\n * See the {@link SAXEventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @return {TokenisingStream}\n ",
             "start": 134,
-            "end": 269,
+            "end": 270,
             "loc": {
               "start": {
                 "line": 7,
@@ -203,8 +203,8 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 270,
-        "end": 396,
+        "start": 271,
+        "end": 397,
         "loc": {
           "start": {
             "line": 13,
@@ -219,8 +219,8 @@
         "source": null,
         "declaration": {
           "type": "VariableDeclaration",
-          "start": 277,
-          "end": 396,
+          "start": 278,
+          "end": 397,
           "loc": {
             "start": {
               "line": 13,
@@ -234,8 +234,8 @@
           "declarations": [
             {
               "type": "VariableDeclarator",
-              "start": 283,
-              "end": 396,
+              "start": 284,
+              "end": 397,
               "loc": {
                 "start": {
                   "line": 13,
@@ -248,8 +248,8 @@
               },
               "id": {
                 "type": "Identifier",
-                "start": 283,
-                "end": 295,
+                "start": 284,
+                "end": 296,
                 "loc": {
                   "start": {
                     "line": 13,
@@ -266,8 +266,8 @@
               },
               "init": {
                 "type": "ArrowFunctionExpression",
-                "start": 298,
-                "end": 396,
+                "start": 299,
+                "end": 397,
                 "loc": {
                   "start": {
                     "line": 13,
@@ -280,8 +280,8 @@
                 },
                 "id": {
                   "type": "Identifier",
-                  "start": 283,
-                  "end": 295,
+                  "start": 284,
+                  "end": 296,
                   "loc": {
                     "start": {
                       "line": 13,
@@ -302,8 +302,8 @@
                 "params": [
                   {
                     "type": "Identifier",
-                    "start": 299,
-                    "end": 305,
+                    "start": 300,
+                    "end": 306,
                     "loc": {
                       "start": {
                         "line": 13,
@@ -320,8 +320,8 @@
                 ],
                 "body": {
                   "type": "NewExpression",
-                  "start": 311,
-                  "end": 396,
+                  "start": 312,
+                  "end": 397,
                   "loc": {
                     "start": {
                       "line": 14,
@@ -334,8 +334,8 @@
                   },
                   "callee": {
                     "type": "Identifier",
-                    "start": 315,
-                    "end": 331,
+                    "start": 316,
+                    "end": 332,
                     "loc": {
                       "start": {
                         "line": 14,
@@ -352,8 +352,8 @@
                   "arguments": [
                     {
                       "type": "ObjectExpression",
-                      "start": 332,
-                      "end": 395,
+                      "start": 333,
+                      "end": 396,
                       "loc": {
                         "start": {
                           "line": 14,
@@ -367,8 +367,8 @@
                       "properties": [
                         {
                           "type": "ObjectProperty",
-                          "start": 336,
-                          "end": 352,
+                          "start": 337,
+                          "end": 353,
                           "loc": {
                             "start": {
                               "line": 15,
@@ -384,8 +384,8 @@
                           "computed": false,
                           "key": {
                             "type": "Identifier",
-                            "start": 336,
-                            "end": 344,
+                            "start": 337,
+                            "end": 345,
                             "loc": {
                               "start": {
                                 "line": 15,
@@ -401,8 +401,8 @@
                           },
                           "value": {
                             "type": "Identifier",
-                            "start": 346,
-                            "end": 352,
+                            "start": 347,
+                            "end": 353,
                             "loc": {
                               "start": {
                                 "line": 15,
@@ -419,8 +419,8 @@
                         },
                         {
                           "type": "ObjectProperty",
-                          "start": 356,
-                          "end": 392,
+                          "start": 357,
+                          "end": 393,
                           "loc": {
                             "start": {
                               "line": 16,
@@ -436,8 +436,8 @@
                           "computed": false,
                           "key": {
                             "type": "Identifier",
-                            "start": 356,
-                            "end": 363,
+                            "start": 357,
+                            "end": 364,
                             "loc": {
                               "start": {
                                 "line": 16,
@@ -453,8 +453,8 @@
                           },
                           "value": {
                             "type": "NewExpression",
-                            "start": 365,
-                            "end": 392,
+                            "start": 366,
+                            "end": 393,
                             "loc": {
                               "start": {
                                 "line": 16,
@@ -467,8 +467,8 @@
                             },
                             "callee": {
                               "type": "Identifier",
-                              "start": 369,
-                              "end": 384,
+                              "start": 370,
+                              "end": 385,
                               "loc": {
                                 "start": {
                                   "line": 16,
@@ -485,8 +485,8 @@
                             "arguments": [
                               {
                                 "type": "Identifier",
-                                "start": 385,
-                                "end": 391,
+                                "start": 386,
+                                "end": 392,
                                 "loc": {
                                   "start": {
                                     "line": 16,
@@ -515,9 +515,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\n * See the {@link SAXEventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @returns TokenisingStream\n ",
+              "value": "*\n * See the {@link SAXEventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @return {TokenisingStream}\n ",
               "start": 134,
-              "end": 269,
+              "end": 270,
               "loc": {
                 "start": {
                   "line": 7,
@@ -535,9 +535,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * See the {@link SAXEventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @returns TokenisingStream\n ",
+            "value": "*\n * See the {@link SAXEventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @return {TokenisingStream}\n ",
             "start": 134,
-            "end": 269,
+            "end": 270,
             "loc": {
               "start": {
                 "line": 7,
@@ -593,9 +593,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\n * See the {@link SAXEventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @returns TokenisingStream\n ",
+      "value": "*\n * See the {@link SAXEventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @return {TokenisingStream}\n ",
       "start": 134,
-      "end": 269,
+      "end": 270,
       "loc": {
         "start": {
           "line": 7,
@@ -980,9 +980,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * See the {@link SAXEventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @returns TokenisingStream\n ",
+      "value": "*\n * See the {@link SAXEventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @return {TokenisingStream}\n ",
       "start": 134,
-      "end": 269,
+      "end": 270,
       "loc": {
         "start": {
           "line": 7,
@@ -1009,8 +1009,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 270,
-      "end": 276,
+      "start": 271,
+      "end": 277,
       "loc": {
         "start": {
           "line": 13,
@@ -1037,8 +1037,8 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 277,
-      "end": 282,
+      "start": 278,
+      "end": 283,
       "loc": {
         "start": {
           "line": 13,
@@ -1063,8 +1063,8 @@
         "binop": null
       },
       "value": "newSAXStream",
-      "start": 283,
-      "end": 295,
+      "start": 284,
+      "end": 296,
       "loc": {
         "start": {
           "line": 13,
@@ -1090,8 +1090,8 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 296,
-      "end": 297,
+      "start": 297,
+      "end": 298,
       "loc": {
         "start": {
           "line": 13,
@@ -1115,8 +1115,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 298,
-      "end": 299,
+      "start": 299,
+      "end": 300,
       "loc": {
         "start": {
           "line": 13,
@@ -1141,8 +1141,8 @@
         "binop": null
       },
       "value": "parser",
-      "start": 299,
-      "end": 305,
+      "start": 300,
+      "end": 306,
       "loc": {
         "start": {
           "line": 13,
@@ -1166,8 +1166,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 305,
-      "end": 306,
+      "start": 306,
+      "end": 307,
       "loc": {
         "start": {
           "line": 13,
@@ -1192,8 +1192,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 307,
-      "end": 309,
+      "start": 308,
+      "end": 310,
       "loc": {
         "start": {
           "line": 13,
@@ -1220,8 +1220,8 @@
         "updateContext": null
       },
       "value": "new",
-      "start": 311,
-      "end": 314,
+      "start": 312,
+      "end": 315,
       "loc": {
         "start": {
           "line": 14,
@@ -1246,8 +1246,8 @@
         "binop": null
       },
       "value": "TokenisingStream",
-      "start": 315,
-      "end": 331,
+      "start": 316,
+      "end": 332,
       "loc": {
         "start": {
           "line": 14,
@@ -1271,8 +1271,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 331,
-      "end": 332,
+      "start": 332,
+      "end": 333,
       "loc": {
         "start": {
           "line": 14,
@@ -1296,8 +1296,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 332,
-      "end": 333,
+      "start": 333,
+      "end": 334,
       "loc": {
         "start": {
           "line": 14,
@@ -1322,8 +1322,8 @@
         "binop": null
       },
       "value": "delegate",
-      "start": 336,
-      "end": 344,
+      "start": 337,
+      "end": 345,
       "loc": {
         "start": {
           "line": 15,
@@ -1348,8 +1348,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 344,
-      "end": 345,
+      "start": 345,
+      "end": 346,
       "loc": {
         "start": {
           "line": 15,
@@ -1374,8 +1374,8 @@
         "binop": null
       },
       "value": "parser",
-      "start": 346,
-      "end": 352,
+      "start": 347,
+      "end": 353,
       "loc": {
         "start": {
           "line": 15,
@@ -1400,8 +1400,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 352,
-      "end": 353,
+      "start": 353,
+      "end": 354,
       "loc": {
         "start": {
           "line": 15,
@@ -1426,8 +1426,8 @@
         "binop": null
       },
       "value": "adaptor",
-      "start": 356,
-      "end": 363,
+      "start": 357,
+      "end": 364,
       "loc": {
         "start": {
           "line": 16,
@@ -1452,8 +1452,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 363,
-      "end": 364,
+      "start": 364,
+      "end": 365,
       "loc": {
         "start": {
           "line": 16,
@@ -1480,8 +1480,8 @@
         "updateContext": null
       },
       "value": "new",
-      "start": 365,
-      "end": 368,
+      "start": 366,
+      "end": 369,
       "loc": {
         "start": {
           "line": 16,
@@ -1506,8 +1506,8 @@
         "binop": null
       },
       "value": "SAXEventAdaptor",
-      "start": 369,
-      "end": 384,
+      "start": 370,
+      "end": 385,
       "loc": {
         "start": {
           "line": 16,
@@ -1531,8 +1531,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 384,
-      "end": 385,
+      "start": 385,
+      "end": 386,
       "loc": {
         "start": {
           "line": 16,
@@ -1557,8 +1557,8 @@
         "binop": null
       },
       "value": "parser",
-      "start": 385,
-      "end": 391,
+      "start": 386,
+      "end": 392,
       "loc": {
         "start": {
           "line": 16,
@@ -1582,8 +1582,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 391,
-      "end": 392,
+      "start": 392,
+      "end": 393,
       "loc": {
         "start": {
           "line": 16,
@@ -1607,8 +1607,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 394,
-      "end": 395,
+      "start": 395,
+      "end": 396,
       "loc": {
         "start": {
           "line": 17,
@@ -1632,8 +1632,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 395,
-      "end": 396,
+      "start": 396,
+      "end": 397,
       "loc": {
         "start": {
           "line": 17,
@@ -1658,8 +1658,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 397,
-      "end": 397,
+      "start": 398,
+      "end": 398,
       "loc": {
         "start": {
           "line": 18,
