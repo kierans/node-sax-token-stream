@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl">
+  <title data-ice="title">Home | sax-token-stream</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="A Node.js Transform stream that pipes tokens from a SAX style parser"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="sax-token-stream"><meta property="twitter:description" content="A Node.js Transform stream that pipes tokens from a SAX style parser"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/kierans/node-sax-token-stream"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-newSAXStream">newSAXStream</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#adaptors">adaptors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/adaptors/sax-event-adaptor.js~SAXEventAdaptor.html">SAXEventAdaptor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~AttributeToken">SAXEventAdaptor~AttributeToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~CDataToken">SAXEventAdaptor~CDataToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~CloseCDataToken">SAXEventAdaptor~CloseCDataToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~CloseNamespaceToken">SAXEventAdaptor~CloseNamespaceToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~CloseTagToken">SAXEventAdaptor~CloseTagToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~CommentToken">SAXEventAdaptor~CommentToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~DoctypeToken">SAXEventAdaptor~DoctypeToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~OpenCDataToken">SAXEventAdaptor~OpenCDataToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~OpenNamespaceToken">SAXEventAdaptor~OpenNamespaceToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~OpenTagStartToken">SAXEventAdaptor~OpenTagStartToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~OpenTagToken">SAXEventAdaptor~OpenTagToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~ProcessingInstructionToken">SAXEventAdaptor~ProcessingInstructionToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~SAXToken">SAXEventAdaptor~SAXToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~SGMLDeclarationToken">SAXEventAdaptor~SGMLDeclarationToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~ScriptToken">SAXEventAdaptor~ScriptToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~TextToken">SAXEventAdaptor~TextToken</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="node-sax-token-stream">node-sax-token-stream</h1><p>An ES6 Node.js <a href="https://nodejs.org/docs/latest-v18.x/api/stream.html#class-streamtransform">Transform stream</a> that pipes tokens from a SAX style parser.</p>
+<p>A widespread pattern with streaming parsers is to emit events when tokens are parsed from an
+input string. Examples include <a href="https://www.npmjs.com/package/sax">SAX</a> libraries, <a href="https://www.npmjs.com/package/parse5-sax-parser">parse5</a> (HTML), and other streaming 
+parsers on NPM. The parser is often wrapped in a <code>Writable</code> stream to allow input strings to 
+be streamed from a source and piped into the parser. For example, a file stream or an HTTP 
+request stream. The parser stream forwards events from the wrapped parser to listeners 
+registered on the stream; as streams are <code>EventEmitter</code>s.</p>
+<p>While the input to the parser stream respects <a href="https://nodejs.org/en/learn/modules/backpressuring-in-streams">back-pressure</a>, the token events are not
+streamed but merely emitted synchronously, without any kind of flow control. A typical reason
+for choosing an event-driven parser is to avoid buffering the entire output, which in
+Javascript typically means something needs to be done with the tokens, such as streaming
+them elsewhere. However, simply writing the events to a stream ignores the back-pressure
+mechanism; many events could be emitted, which could overflow a downstream listener in a
+stream flow if data is flowing slowly, with no way to limit the fire hose upstream.</p>
+<p>If an error occurs during parsing, the input stream needs to be destroyed to stop
+reading more data.</p>
+<p>Streams provide a standard pattern in Node.js to handle back-pressure and errors. What is
+required is to have events from a parser stream respect back-pressure in a flow.</p>
+<p>This module provides utility functions to create a stream that wraps a <code>Writable</code> stream 
+representing a parser. Events are captured and written to the stream in a manner which respects
+back-pressure.</p>
+<p>Supports:</p>
+<ul>
+<li><a href="https://www.npmjs.com/package/sax">sax</a></li>
+</ul>
+<h2 id="usage">Usage</h2><pre><code class="lang-shell"><code class="source-code prettyprint">$ npm install sax-token-stream
+$ npm install &lt;parser-library&gt;</code>
+</code></pre>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">// TODO</code>
+</code></pre>
+<h2 id="tests">Tests</h2><pre><code class="lang-shell"><code class="source-code prettyprint">$ npm run test</code>
+</code></pre>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
