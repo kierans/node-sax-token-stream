@@ -80,6 +80,7 @@ required is to have events from a parser stream respect back-pressure in a flow.
 <p>This module provides utility functions to create a stream that wraps a <code>Writable</code> stream 
 representing a parser. Events are captured and written to the stream in a manner which respects
 back-pressure.</p>
+<p>API Docs available at <a href="https://kierans.github.io/node-sax-token-stream/">https://kierans.github.io/node-sax-token-stream/</a></p>
 <p>Supports:</p>
 <ul>
 <li><a href="https://www.npmjs.com/package/sax">sax</a></li>
@@ -88,7 +89,13 @@ back-pressure.</p>
 <h2 id="usage">Usage</h2><pre><code class="lang-shell"><code class="source-code prettyprint">$ npm install sax-token-stream
 $ npm install &lt;parser-library&gt;</code>
 </code></pre>
-<pre><code class="lang-javascript"><code class="source-code prettyprint">// TODO</code>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">import { newSAXStream } from &quot;sax-token-stream&quot;;
+
+const input = createInputStream()
+const stream = newSAXStream(sax.createStream(true, { xmlns: true }))
+const output = createOutputStream();
+
+input.pipe(stream).pipe(output);</code>
 </code></pre>
 <h2 id="tests">Tests</h2><pre><code class="lang-shell"><code class="source-code prettyprint">$ npm run test</code>
 </code></pre>
