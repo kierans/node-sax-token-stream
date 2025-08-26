@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../../">
-  <title data-ice="title">src/adaptors/utils.js | sax-token-stream</title>
+  <title data-ice="title">src/adaptors/parse5-event-adaptor.js | sax-token-stream</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -59,13 +59,113 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">src/adaptors/utils.js</h1>
+<div class="content" data-ice="content"><h1 data-ice="title">src/adaptors/parse5-event-adaptor.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">&quot;use strict&quot;;
 
+import EventEmitter from &quot;node:events&quot;;
+
+import { TokenisingStream } from &quot;tokenising-stream&quot;;
+
+import { assign2 } from &quot;./utils.js&quot;;
+
 /**
- * @ignore
+ * @typedef {Object} Parse5EventAdaptor~CommentToken
+ * @extends {parse5-sax-parser~Comment}
+ * @property {&apos;comment&apos;} type - Token type
  */
-export const assign2 = (a, b) =&gt; Object.assign({}, a, b);
+
+/**
+ * @typedef {Object} Parse5EventAdaptor~DoctypeToken
+ * @extends {parse5-sax-parser~Doctype}
+ * @property {&apos;doctype&apos;} type - Token type
+ */
+
+/**
+ * @typedef {Object} Parse5EventAdaptor~EndTagToken
+ * @extends {parse5-sax-parser~EndTag}
+ * @property {&apos;endTag&apos;} type - Token type
+ */
+
+/**
+* @typedef {Object} Parse5EventAdaptor~StartTagToken
+* @extends {parse5-sax-parser~StartTag}
+* @property {&apos;startTag&apos;} type - Token type
+*/
+
+/**
+ * @typedef {Object} Parse5EventAdaptor~TextToken
+ * @extends {parse5-sax-parser~Text}
+ * @property {&apos;text&apos;} type - Token type
+ */
+
+/**
+ * @typedef {Parse5EventAdaptor~CommentToken|Parse5EventAdaptor~DoctypeToken|Parse5EventAdaptor~EndTagToken|Parse5EventAdaptor~StartTagToken|Parse5EventAdaptor~TextToken} Parse5EventAdaptor~Parse5Token
+ */
+
+/**
+ * EventAdaptor for Parse5 SAX parser.
+ *
+ * The following events are piped through the stream as tokens
+ *
+ * &lt;ul&gt;
+ *   &lt;li&gt;&lt;b&gt;comment&lt;/b&gt; - {@link Parse5EventAdaptor~CommentToken}&lt;/li&gt;
+ *   &lt;li&gt;&lt;b&gt;doctype&lt;/b&gt; - {@link Parse5EventAdaptor~DoctypeToken}&lt;/li&gt;
+ *   &lt;li&gt;&lt;b&gt;endTag&lt;/b&gt; - {@link Parse5EventAdaptor~EndTagToken}&lt;/li&gt;
+ *   &lt;li&gt;&lt;b&gt;startTag&lt;/b&gt; - {@link Parse5EventAdaptor~StartTagToken}&lt;/li&gt;
+ *   &lt;li&gt;&lt;b&gt;text&lt;/b&gt; - {@link Parse5EventAdaptor~TextToken}&lt;/li&gt;
+ * &lt;/ul&gt;
+ *
+ * Tokens extend the base types as defined in the `parse5-sax-parser` module. For example,
+ * a `StartTagToken` will extend the `StartTag` type.
+ *
+ * See the Parse5 documentation for more details.
+ *
+ * @implements {EventAdaptor}
+ * @see https://www.npmjs.com/package/parse5-sax-parser
+ * @see https://parse5.js.org/modules/parse5-sax-parser.html
+ */
+export default class Parse5EventAdaptor extends EventEmitter {
+	/**
+	 * @param {EventEmitter} delegate
+	 */
+	constructor(delegate) {
+		super();
+
+		delegate.on(&quot;comment&quot;, (token) =&gt; {
+			this.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(token, {
+				type: &quot;comment&quot;
+			}));
+		});
+
+		delegate.on(&quot;doctype&quot;, (token) =&gt; {
+			this.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(token, {
+				type: &quot;doctype&quot;
+			}));
+		});
+
+		delegate.on(&quot;endTag&quot;, (token) =&gt; {
+			this.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(token, {
+				type: &quot;endTag&quot;
+			}));
+		});
+
+		delegate.on(&quot;startTag&quot;, (token) =&gt; {
+			this.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(token, {
+				type: &quot;startTag&quot;
+			}));
+		});
+
+		delegate.on(&quot;text&quot;, (token) =&gt; {
+			this.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(token, {
+				type: &quot;text&quot;
+			}));
+		});
+
+		delegate.on(&quot;error&quot;, (error) =&gt; {
+			this.emit(TokenisingStream.ERROR_EVENT_NAME, error);
+		});
+	}
+}
 </code></pre>
 
 </div>
