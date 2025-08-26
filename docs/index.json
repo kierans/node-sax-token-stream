@@ -1,0 +1,1384 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/adaptors/sax-event-adaptor.js",
+    "content": "\"use strict\";\n\nimport EventEmitter from \"node:events\";\n\nimport { TokenisingStream } from \"tokenising-stream\";\n\nimport { assign2 } from \"./utils.js\";\n\n/**\n * @typedef {Object} SAXEventAdaptor~AttributeToken\n * @property {'attribute'} type - Token type\n * @property {string} name - Attribute name\n * @property {string} value - Attribute value\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~CDataToken\n * @property {'cdata'} type - Token type\n * @property {string} cdata - CDATA content\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~CloseCDataToken\n * @property {'closecdata'} type - Token type\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~CloseNamespaceToken\n * @property {'closenamespace'} type - Token type\n * @property {string} prefix - Namespace prefix\n * @property {string} uri - Namespace URI\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~CloseTagToken\n * @property {'closetag'} type - Token type\n * @property {string} name - Tag name\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~CommentToken\n * @property {'comment'} type - Token type\n * @property {string} comment - Comment content\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~DoctypeToken\n * @property {'doctype'} type - Token type\n * @property {string} doctype - DOCTYPE declaration\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~OpenCDataToken\n * @property {'opencdata'} type - Token type\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~OpenTagToken\n * @property {'opentag'} type - Token type\n * @property {string} name - Tag name\n * @property {boolean} isSelfClosing - Whether the tag is self-closing\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~OpenTagStartToken\n * @property {'opentagstart'} type - Token type\n * @property {string} name - Tag name\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~OpenNamespaceToken\n * @property {'opennamespace'} type - Token type\n * @property {string} prefix - Namespace prefix\n * @property {string} uri - Namespace URI\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~ProcessingInstructionToken\n * @property {'processinginstruction'} type - Token type\n * @property {string} name - Processing instruction name\n * @property {string} body - Processing instruction body\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~ScriptToken\n * @property {'script'} type - Token type\n * @property {string} script - Script content\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~SGMLDeclarationToken\n * @property {'sgmldeclaration'} type - Token type\n * @property {string} sgmldeclaration - Declaration content\n */\n\n/**\n * @typedef {Object} SAXEventAdaptor~TextToken\n * @property {'text'} type - Token type\n * @property {string} text - Text content\n */\n\n/**\n * @typedef {SAXEventAdaptor~AttributeToken|SAXEventAdaptor~CDataToken|SAXEventAdaptor~CloseCDataToken|SAXEventAdaptor~CloseNamespaceToken|SAXEventAdaptor~CloseTagToken|SAXEventAdaptor~CommentToken|SAXEventAdaptor~DoctypeToken|SAXEventAdaptor~OpenCDataToken|SAXEventAdaptor~OpenTagToken|SAXEventAdaptor~OpenTagStartToken|SAXEventAdaptor~OpenNamespaceToken|SAXEventAdaptor~ProcessingInstructionToken|SAXEventAdaptor~ScriptToken|SAXEventAdaptor~SGMLDeclarationToken|SAXEventAdaptor~TextToken} SAXEventAdaptor~SAXToken\n */\n\n/**\n * EventAdaptor for SAX parser.\n *\n * The following events are piped through the stream as tokens\n *\n * <ul>\n *   <li><b>attribute</b> - {@link SAXEventAdaptor~AttributeToken}</li>\n *   <li><b>cdata</b> - {@link SAXEventAdaptor~CDataToken}</li>\n *   <li><b>closecdata</b> - {@link SAXEventAdaptor~CloseCDataToken}</li>\n *   <li><b>closenamespace</b> - {@link SAXEventAdaptor~CloseNamespaceToken}</li>\n *   <li><b>closetag</b> - {@link SAXEventAdaptor~CloseTagToken}</li>\n *   <li><b>comment</b> - {@link SAXEventAdaptor~CommentToken}</li>\n *   <li><b>doctype</b> - {@link SAXEventAdaptor~DoctypeToken}</li>\n *   <li><b>opencdata</b> - {@link SAXEventAdaptor~OpenCDataToken}</li>\n *   <li><b>opentag</b> - {@link SAXEventAdaptor~OpenTagToken}</li>\n *   <li><b>opentagstart</b> - {@link SAXEventAdaptor~OpenTagStartToken}</li>\n *   <li><b>opennamespace</b> - {@link SAXEventAdaptor~OpenNamespaceToken}</li>\n *   <li><b>processinginstruction</b> - {@link SAXEventAdaptor~ProcessingInstructionToken}</li>\n *   <li><b>script</b> - {@link SAXEventAdaptor~ScriptToken}</li>\n *   <li><b>sgmldeclaration</b> - {@link SAXEventAdaptor~SGMLDeclarationToken}</li>\n *   <li><b>text</b> - {@link SAXEventAdaptor~TextToken}</li>\n * </ul>\n *\n * @implements EventAdaptor\n * @see https://www.npmjs.com/package/sax\n */\nexport default class SAXEventAdaptor extends EventEmitter {\n\t/**\n\t * @param {EventEmitter} delegate\n\t */\n\tconstructor(delegate) {\n\t\tsuper();\n\n\t\tdelegate.on(\"attribute\", (token) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(token, {\n\t\t\t\ttype: \"attribute\"\n\t\t\t}));\n\t\t});\n\n\t\tdelegate.on(\"cdata\", (text) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, {\n\t\t\t\ttype: \"cdata\",\n\t\t\t\tcdata: text\n\t\t\t});\n\t\t});\n\n\t\tdelegate.on(\"closecdata\", () => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, {\n\t\t\t\ttype: \"closecdata\"\n\t\t\t});\n\t\t});\n\n\t\tdelegate.on(\"closenamespace\", (ns) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(ns, {\n\t\t\t\ttype: \"closenamespace\",\n\t\t\t}));\n\t\t});\n\n\t\tdelegate.on(\"closetag\", (name) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, {\n\t\t\t\ttype: \"closetag\",\n\t\t\t\tname\n\t\t\t});\n\t\t});\n\n\t\tdelegate.on(\"comment\", (comment) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, {\n\t\t\t\ttype: \"comment\",\n\t\t\t\tcomment: comment\n\t\t\t});\n\t\t});\n\n\t\tdelegate.on(\"doctype\", (doctype) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, {\n\t\t\t\ttype: \"doctype\",\n\t\t\t\tdoctype\n\t\t\t});\n\t\t});\n\n\t\tdelegate.on(\"opencdata\", () => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, {\n\t\t\t\ttype: \"opencdata\"\n\t\t\t});\n\t\t});\n\n\t\tdelegate.on(\"opennamespace\", (ns) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(ns, {\n\t\t\t\ttype: \"opennamespace\",\n\t\t\t}));\n\t\t});\n\n\t\tdelegate.on(\"opentag\", (node) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(node, {\n\t\t\t\ttype: \"opentag\",\n\t\t\t}));\n\t\t});\n\n\t\tdelegate.on(\"opentagstart\", (node) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(node, {\n\t\t\t\ttype: \"opentagstart\",\n\t\t\t}));\n\t\t});\n\n\t\tdelegate.on(\"processinginstruction\", (instruction) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(instruction, {\n\t\t\t\ttype: \"processinginstruction\",\n\t\t\t}));\n\t\t});\n\n\t\tdelegate.on(\"script\", (script) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, {\n\t\t\t\ttype: \"script\",\n\t\t\t\tscript: script\n\t\t\t});\n\t\t});\n\n\t\tdelegate.on(\"sgmldeclaration\", (sgmldeclaration) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, {\n\t\t\t\ttype: \"sgmldeclaration\",\n\t\t\t\tsgmldeclaration: sgmldeclaration\n\t\t\t});\n\t\t});\n\n\t\tdelegate.on(\"text\", (text) => {\n\t\t\tthis.emit(TokenisingStream.TOKEN_EVENT_NAME, {\n\t\t\t\ttype: \"text\",\n\t\t\t\ttext: text\n\t\t\t});\n\t\t});\n\n\t\tdelegate.on(\"error\", (error) => {\n\t\t\tthis.emit(TokenisingStream.ERROR_EVENT_NAME, error);\n\t\t})\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/node-sax-token-stream/node-sax-token-stream/src/adaptors/sax-event-adaptor.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "typedef",
+    "name": "SAXEventAdaptor~AttributeToken",
+    "memberof": "src/adaptors/sax-event-adaptor.js",
+    "static": true,
+    "longname": "src/adaptors/sax-event-adaptor.js~SAXEventAdaptor~AttributeToken",
+    "access": "public",
+    "description": "",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "'attribute'"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": "Token type"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "name",
+        "description": "Attribute name"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": "Attribute value"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "SAXEventAdaptor~AttributeToken"
+    }
+  },
+  {
+    "__docId__": 50,
+    "kind": "typedef",
+    "name": "SAXEventAdaptor~CDataToken",
+    "memberof": "src/adaptors/sax-event-adaptor.js",
+    "static": true,
+    "longname": "src/adaptors/sax-event-adaptor.js~SAXEventAdaptor~CDataToken",
+    "access": "public",
+    "description": "",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "'cdata'"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": "Token type"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "cdata",
+        "description": "CDATA content"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "SAXEventAdaptor~CDataToken"
+    }
+  },
+  {
+    "__docId__": 51,
+    "kind": "typedef",
+    "name": "SAXEventAdaptor~CloseCDataToken",
+    "memberof": "src/adaptors/sax-event-adaptor.js",
+    "static": true,
+    "longname": "src/adaptors/sax-event-adaptor.js~SAXEventAdaptor~CloseCDataToken",
+    "access": "public",
+    "description": "",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "'closecdata'"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": "Token type"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "SAXEventAdaptor~CloseCDataToken"
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "typedef",
+    "name": "SAXEventAdaptor~CloseNamespaceToken",
+    "memberof": "src/adaptors/sax-event-adaptor.js",
+    "static": true,
+    "longname": "src/adaptors/sax-event-adaptor.js~SAXEventAdaptor~CloseNamespaceToken",
+    "access": "public",
+    "description": "",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "'closenamespace'"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": "Token type"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "prefix",
+        "description": "Namespace prefix"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "uri",
+        "description": "Namespace URI"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "SAXEventAdaptor~CloseNamespaceToken"
+    }
+  },
+  {
+    "__docId__": 53,
+    "kind": "typedef",
+    "name": "SAXEventAdaptor~CloseTagToken",
+    "memberof": "src/adaptors/sax-event-adaptor.js",
+    "static": true,
+    "longname": "src/adaptors/sax-event-adaptor.js~SAXEventAdaptor~CloseTagToken",
+    "access": "public",
+    "description": "",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "'closetag'"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": "Token type"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "name",
+        "description": "Tag name"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "SAXEventAdaptor~CloseTagToken"
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "typedef",
+    "name": "SAXEventAdaptor~CommentToken",
+    "memberof": "src/adaptors/sax-event-adaptor.js",
+    "static": true,
+    "longname": "src/adaptors/sax-event-adaptor.js~SAXEventAdaptor~CommentToken",
+    "access": "public",
+    "description": "",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "'comment'"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": "Token type"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "comment",
+        "description": "Comment content"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "SAXEventAdaptor~CommentToken"
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "typedef",
+    "name": "SAXEventAdaptor~DoctypeToken",
+    "memberof": "src/adaptors/sax-event-adaptor.js",
+    "static": true,
+    "longname": "src/adaptors/sax-event-adaptor.js~SAXEventAdaptor~DoctypeToken",
+    "access": "public",
+    "description": "",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "'doctype'"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": "Token type"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "doctype",
+        "description": "DOCTYPE declaration"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "SAXEventAdaptor~DoctypeToken"
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "typedef",
+    "name": "SAXEventAdaptor~OpenCDataToken",
+    "memberof": "src/adaptors/sax-event-adaptor.js",
+    "static": true,
+    "longname": "src/adaptors/sax-event-adaptor.js~SAXEventAdaptor~OpenCDataToken",
+    "access": "public",
+    "description": "",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "'opencdata'"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": "Token type"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "SAXEventAdaptor~OpenCDataToken"
+    }
+  },
+  {
+    "__docId__": 57,
+    "kind": "typedef",
+    "name": "SAXEventAdaptor~OpenTagToken",
+    "memberof": "src/adaptors/sax-event-adaptor.js",
+    "static": true,
+    "longname": "src/adaptors/sax-event-adaptor.js~SAXEventAdaptor~OpenTagToken",
+    "access": "public",
+    "description": "",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "'opentag'"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": "Token type"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "name",
+        "description": "Tag name"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "isSelfClosing",
+        "description": "Whether the tag is self-closing"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "SAXEventAdaptor~OpenTagToken"
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "typedef",
+    "name": "SAXEventAdaptor~OpenTagStartToken",
+    "memberof": "src/adaptors/sax-event-adaptor.js",
+    "static": true,
+    "longname": "src/adaptors/sax-event-adaptor.js~SAXEventAdaptor~OpenTagStartToken",
+    "access": "public",
+    "description": "",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "'opentagstart'"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": "Token type"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "name",
+        "description": "Tag name"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "SAXEventAdaptor~OpenTagStartToken"
+    }
+  },
+  {
+    "__docId__": 59,
+    "kind": "typedef",
+    "name": "SAXEventAdaptor~OpenNamespaceToken",
+    "memberof": "src/adaptors/sax-event-adaptor.js",
+    "static": true,
+    "longname": "src/adaptors/sax-event-adaptor.js~SAXEventAdaptor~OpenNamespaceToken",
+    "access": "public",
+    "description": "",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "'opennamespace'"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": "Token type"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "prefix",
+        "description": "Namespace prefix"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "uri",
+        "description": "Namespace URI"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "SAXEventAdaptor~OpenNamespaceToken"
+    }
+  },
+  {
+    "__docId__": 60,
+    "kind": "typedef",
+    "name": "SAXEventAdaptor~ProcessingInstructionToken",
+    "memberof": "src/adaptors/sax-event-adaptor.js",
+    "static": true,
+    "longname": "src/adaptors/sax-event-adaptor.js~SAXEventAdaptor~ProcessingInstructionToken",
+    "access": "public",
+    "description": "",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "'processinginstruction'"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": "Token type"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "name",
+        "description": "Processing instruction name"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "body",
+        "description": "Processing instruction body"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "SAXEventAdaptor~ProcessingInstructionToken"
+    }
+  },
+  {
+    "__docId__": 61,
+    "kind": "typedef",
+    "name": "SAXEventAdaptor~ScriptToken",
+    "memberof": "src/adaptors/sax-event-adaptor.js",
+    "static": true,
+    "longname": "src/adaptors/sax-event-adaptor.js~SAXEventAdaptor~ScriptToken",
+    "access": "public",
+    "description": "",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "'script'"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": "Token type"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "script",
+        "description": "Script content"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "SAXEventAdaptor~ScriptToken"
+    }
+  },
+  {
+    "__docId__": 62,
+    "kind": "typedef",
+    "name": "SAXEventAdaptor~SGMLDeclarationToken",
+    "memberof": "src/adaptors/sax-event-adaptor.js",
+    "static": true,
+    "longname": "src/adaptors/sax-event-adaptor.js~SAXEventAdaptor~SGMLDeclarationToken",
+    "access": "public",
+    "description": "",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "'sgmldeclaration'"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": "Token type"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sgmldeclaration",
+        "description": "Declaration content"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "SAXEventAdaptor~SGMLDeclarationToken"
+    }
+  },
+  {
+    "__docId__": 63,
+    "kind": "typedef",
+    "name": "SAXEventAdaptor~TextToken",
+    "memberof": "src/adaptors/sax-event-adaptor.js",
+    "static": true,
+    "longname": "src/adaptors/sax-event-adaptor.js~SAXEventAdaptor~TextToken",
+    "access": "public",
+    "description": "",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "'text'"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": "Token type"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "text",
+        "description": "Text content"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "SAXEventAdaptor~TextToken"
+    }
+  },
+  {
+    "__docId__": 64,
+    "kind": "typedef",
+    "name": "SAXEventAdaptor~SAXToken",
+    "memberof": "src/adaptors/sax-event-adaptor.js",
+    "static": true,
+    "longname": "src/adaptors/sax-event-adaptor.js~SAXEventAdaptor~SAXToken",
+    "access": "public",
+    "description": "",
+    "type": {
+      "types": [
+        "SAXEventAdaptor~AttributeToken",
+        "SAXEventAdaptor~CDataToken",
+        "SAXEventAdaptor~CloseCDataToken",
+        "SAXEventAdaptor~CloseNamespaceToken",
+        "SAXEventAdaptor~CloseTagToken",
+        "SAXEventAdaptor~CommentToken",
+        "SAXEventAdaptor~DoctypeToken",
+        "SAXEventAdaptor~OpenCDataToken",
+        "SAXEventAdaptor~OpenTagToken",
+        "SAXEventAdaptor~OpenTagStartToken",
+        "SAXEventAdaptor~OpenNamespaceToken",
+        "SAXEventAdaptor~ProcessingInstructionToken",
+        "SAXEventAdaptor~ScriptToken",
+        "SAXEventAdaptor~SGMLDeclarationToken",
+        "SAXEventAdaptor~TextToken"
+      ],
+      "optional": false,
+      "name": "SAXEventAdaptor~SAXToken"
+    }
+  },
+  {
+    "__docId__": 65,
+    "kind": "class",
+    "name": "SAXEventAdaptor",
+    "memberof": "src/adaptors/sax-event-adaptor.js",
+    "static": true,
+    "longname": "src/adaptors/sax-event-adaptor.js~SAXEventAdaptor",
+    "access": "public",
+    "export": true,
+    "importPath": "sax-token-stream/src/adaptors/sax-event-adaptor.js",
+    "importStyle": "SAXEventAdaptor",
+    "description": "EventAdaptor for SAX parser.\n\nThe following events are piped through the stream as tokens\n\n<ul>\n  <li><b>attribute</b> - {@link SAXEventAdaptor~AttributeToken}</li>\n  <li><b>cdata</b> - {@link SAXEventAdaptor~CDataToken}</li>\n  <li><b>closecdata</b> - {@link SAXEventAdaptor~CloseCDataToken}</li>\n  <li><b>closenamespace</b> - {@link SAXEventAdaptor~CloseNamespaceToken}</li>\n  <li><b>closetag</b> - {@link SAXEventAdaptor~CloseTagToken}</li>\n  <li><b>comment</b> - {@link SAXEventAdaptor~CommentToken}</li>\n  <li><b>doctype</b> - {@link SAXEventAdaptor~DoctypeToken}</li>\n  <li><b>opencdata</b> - {@link SAXEventAdaptor~OpenCDataToken}</li>\n  <li><b>opentag</b> - {@link SAXEventAdaptor~OpenTagToken}</li>\n  <li><b>opentagstart</b> - {@link SAXEventAdaptor~OpenTagStartToken}</li>\n  <li><b>opennamespace</b> - {@link SAXEventAdaptor~OpenNamespaceToken}</li>\n  <li><b>processinginstruction</b> - {@link SAXEventAdaptor~ProcessingInstructionToken}</li>\n  <li><b>script</b> - {@link SAXEventAdaptor~ScriptToken}</li>\n  <li><b>sgmldeclaration</b> - {@link SAXEventAdaptor~SGMLDeclarationToken}</li>\n  <li><b>text</b> - {@link SAXEventAdaptor~TextToken}</li>\n</ul>",
+    "see": [
+      "https://www.npmjs.com/package/sax"
+    ],
+    "lineNumber": 132,
+    "interface": false,
+    "extends": [
+      "node:events~EventEmitter"
+    ],
+    "implements": [
+      "*"
+    ]
+  },
+  {
+    "__docId__": 66,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/adaptors/sax-event-adaptor.js~SAXEventAdaptor",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/adaptors/sax-event-adaptor.js~SAXEventAdaptor#constructor",
+    "access": "public",
+    "description": "",
+    "lineNumber": 136,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "EventEmitter"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "delegate",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 67,
+    "kind": "file",
+    "name": "src/adaptors/utils.js",
+    "content": "\"use strict\";\n\n/**\n * @ignore\n */\nexport const assign2 = (a, b) => Object.assign({}, a, b);\n",
+    "static": true,
+    "longname": "/home/runner/work/node-sax-token-stream/node-sax-token-stream/src/adaptors/utils.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 68,
+    "kind": "function",
+    "name": "assign2",
+    "memberof": "src/adaptors/utils.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/adaptors/utils.js~assign2",
+    "access": "public",
+    "export": true,
+    "importPath": "sax-token-stream/src/adaptors/utils.js",
+    "importStyle": "{assign2}",
+    "description": "",
+    "lineNumber": 6,
+    "ignore": true,
+    "params": [
+      {
+        "name": "a",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "b",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 69,
+    "kind": "file",
+    "name": "src/index.js",
+    "content": "\"use strict\";\n\nimport { TokenisingStream } from \"tokenising-stream\";\n\nimport SAXEventAdaptor from \"./adaptors/sax-event-adaptor.js\";\n\n/**\n * See the {@link SAXEventAdaptor} documentation for token details.\n *\n * @param {Writable} parser\n * @returns TokenisingStream\n */\nexport const newSAXStream = (parser) =>\n\tnew TokenisingStream({\n\t\tdelegate: parser,\n\t\tadaptor: new SAXEventAdaptor(parser)\n\t})\n",
+    "static": true,
+    "longname": "/home/runner/work/node-sax-token-stream/node-sax-token-stream/src/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 70,
+    "kind": "function",
+    "name": "newSAXStream",
+    "memberof": "src/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/index.js~newSAXStream",
+    "access": "public",
+    "export": true,
+    "importPath": "sax-token-stream",
+    "importStyle": "{newSAXStream}",
+    "description": "See the {@link SAXEventAdaptor} documentation for token details.",
+    "lineNumber": 13,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "TokenisingStream"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Writable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "parser",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "TokenisingStream"
+    }
+  },
+  {
+    "kind": "index",
+    "content": "# node-sax-token-stream\n\nAn ES6 Node.js [Transform stream][1] that pipes tokens from a SAX style parser.\n\nA widespread pattern with streaming parsers is to emit events when tokens are parsed from an\ninput string. Examples include [SAX][2] libraries, [parse5][3] (HTML), and other streaming \nparsers on NPM. The parser is often wrapped in a `Writable` stream to allow input strings to \nbe streamed from a source and piped into the parser. For example, a file stream or an HTTP \nrequest stream. The parser stream forwards events from the wrapped parser to listeners \nregistered on the stream; as streams are `EventEmitter`s.\n\nWhile the input to the parser stream respects [back-pressure][4], the token events are not\nstreamed but merely emitted synchronously, without any kind of flow control. A typical reason\nfor choosing an event-driven parser is to avoid buffering the entire output, which in\nJavascript typically means something needs to be done with the tokens, such as streaming\nthem elsewhere. However, simply writing the events to a stream ignores the back-pressure\nmechanism; many events could be emitted, which could overflow a downstream listener in a\nstream flow if data is flowing slowly, with no way to limit the fire hose upstream.\n\nIf an error occurs during parsing, the input stream needs to be destroyed to stop\nreading more data.\n\nStreams provide a standard pattern in Node.js to handle back-pressure and errors. What is\nrequired is to have events from a parser stream respect back-pressure in a flow.\n\nThis module provides utility functions to create a stream that wraps a `Writable` stream \nrepresenting a parser. Events are captured and written to the stream in a manner which respects\nback-pressure.\n\nSupports:\n - [sax][2]\n\n[1]: https://nodejs.org/docs/latest-v18.x/api/stream.html#class-streamtransform\n[2]: https://www.npmjs.com/package/sax\n[3]: https://www.npmjs.com/package/parse5-sax-parser\n[4]: https://nodejs.org/en/learn/modules/backpressuring-in-streams\n\n## Usage\n\n```shell\n$ npm install sax-token-stream\n$ npm install <parser-library>\n```\n\n```javascript\n// TODO\n```\n\n## Tests\n\n```shell\n$ npm run test\n```\n",
+    "longname": "/home/runner/work/node-sax-token-stream/node-sax-token-stream/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"sax-token-stream\",\n  \"version\": \"0.1.0\",\n  \"description\": \"A Node.js Transform stream that pipes tokens from a SAX style parser\",\n  \"main\": \"src/index.js\",\n  \"type\": \"module\",\n  \"types\": \"src/index.d.ts\",\n  \"engines\": {\n    \"node\": \">=14.0.0\"\n  },\n  \"scripts\": {\n    \"docs\": \"esdoc\",\n    \"test\": \"mocha test\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/kierans/node-sax-token-stream.git\"\n  },\n  \"keywords\": [\n    \"html\",\n    \"sax\",\n    \"xml\"\n  ],\n  \"files\": [\n    \"src\",\n    \"README.md\"\n  ],\n  \"author\": \"Kieran Simpson <kierans777@gmail.com>\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/kierans/node-sax-token-stream/issues\"\n  },\n  \"homepage\": \"https://github.com/kierans/node-sax-token-streamm#readme\",\n  \"devDependencies\": {\n    \"@types/mocha\": \"^10.0.10\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"hamjest\": \"^4.1.0\",\n    \"mocha\": \"^11.7.1\",\n    \"sax\": \"^1.4.1\"\n  },\n  \"peerDependencies\": {\n    \"sax\": \"^1.4.1\"\n  },\n  \"dependencies\": {\n    \"tokenising-stream\": \"^0.3.0\"\n  }\n}\n",
+    "longname": "/home/runner/work/node-sax-token-stream/node-sax-token-stream/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

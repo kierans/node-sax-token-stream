@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/adaptors/sax-event-adaptor.js | sax-token-stream</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="A Node.js Transform stream that pipes tokens from a SAX style parser"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="sax-token-stream"><meta property="twitter:description" content="A Node.js Transform stream that pipes tokens from a SAX style parser"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/kierans/node-sax-token-stream"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-newSAXStream">newSAXStream</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#adaptors">adaptors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/adaptors/sax-event-adaptor.js~SAXEventAdaptor.html">SAXEventAdaptor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~AttributeToken">SAXEventAdaptor~AttributeToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~CDataToken">SAXEventAdaptor~CDataToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~CloseCDataToken">SAXEventAdaptor~CloseCDataToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~CloseNamespaceToken">SAXEventAdaptor~CloseNamespaceToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~CloseTagToken">SAXEventAdaptor~CloseTagToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~CommentToken">SAXEventAdaptor~CommentToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~DoctypeToken">SAXEventAdaptor~DoctypeToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~OpenCDataToken">SAXEventAdaptor~OpenCDataToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~OpenNamespaceToken">SAXEventAdaptor~OpenNamespaceToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~OpenTagStartToken">SAXEventAdaptor~OpenTagStartToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~OpenTagToken">SAXEventAdaptor~OpenTagToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~ProcessingInstructionToken">SAXEventAdaptor~ProcessingInstructionToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~SAXToken">SAXEventAdaptor~SAXToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~SGMLDeclarationToken">SAXEventAdaptor~SGMLDeclarationToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~ScriptToken">SAXEventAdaptor~ScriptToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SAXEventAdaptor~TextToken">SAXEventAdaptor~TextToken</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/adaptors/sax-event-adaptor.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">&quot;use strict&quot;;
+
+import EventEmitter from &quot;node:events&quot;;
+
+import { TokenisingStream } from &quot;tokenising-stream&quot;;
+
+import { assign2 } from &quot;./utils.js&quot;;
+
+/**
+ * @typedef {Object} SAXEventAdaptor~AttributeToken
+ * @property {&apos;attribute&apos;} type - Token type
+ * @property {string} name - Attribute name
+ * @property {string} value - Attribute value
+ */
+
+/**
+ * @typedef {Object} SAXEventAdaptor~CDataToken
+ * @property {&apos;cdata&apos;} type - Token type
+ * @property {string} cdata - CDATA content
+ */
+
+/**
+ * @typedef {Object} SAXEventAdaptor~CloseCDataToken
+ * @property {&apos;closecdata&apos;} type - Token type
+ */
+
+/**
+ * @typedef {Object} SAXEventAdaptor~CloseNamespaceToken
+ * @property {&apos;closenamespace&apos;} type - Token type
+ * @property {string} prefix - Namespace prefix
+ * @property {string} uri - Namespace URI
+ */
+
+/**
+ * @typedef {Object} SAXEventAdaptor~CloseTagToken
+ * @property {&apos;closetag&apos;} type - Token type
+ * @property {string} name - Tag name
+ */
+
+/**
+ * @typedef {Object} SAXEventAdaptor~CommentToken
+ * @property {&apos;comment&apos;} type - Token type
+ * @property {string} comment - Comment content
+ */
+
+/**
+ * @typedef {Object} SAXEventAdaptor~DoctypeToken
+ * @property {&apos;doctype&apos;} type - Token type
+ * @property {string} doctype - DOCTYPE declaration
+ */
+
+/**
+ * @typedef {Object} SAXEventAdaptor~OpenCDataToken
+ * @property {&apos;opencdata&apos;} type - Token type
+ */
+
+/**
+ * @typedef {Object} SAXEventAdaptor~OpenTagToken
+ * @property {&apos;opentag&apos;} type - Token type
+ * @property {string} name - Tag name
+ * @property {boolean} isSelfClosing - Whether the tag is self-closing
+ */
+
+/**
+ * @typedef {Object} SAXEventAdaptor~OpenTagStartToken
+ * @property {&apos;opentagstart&apos;} type - Token type
+ * @property {string} name - Tag name
+ */
+
+/**
+ * @typedef {Object} SAXEventAdaptor~OpenNamespaceToken
+ * @property {&apos;opennamespace&apos;} type - Token type
+ * @property {string} prefix - Namespace prefix
+ * @property {string} uri - Namespace URI
+ */
+
+/**
+ * @typedef {Object} SAXEventAdaptor~ProcessingInstructionToken
+ * @property {&apos;processinginstruction&apos;} type - Token type
+ * @property {string} name - Processing instruction name
+ * @property {string} body - Processing instruction body
+ */
+
+/**
+ * @typedef {Object} SAXEventAdaptor~ScriptToken
+ * @property {&apos;script&apos;} type - Token type
+ * @property {string} script - Script content
+ */
+
+/**
+ * @typedef {Object} SAXEventAdaptor~SGMLDeclarationToken
+ * @property {&apos;sgmldeclaration&apos;} type - Token type
+ * @property {string} sgmldeclaration - Declaration content
+ */
+
+/**
+ * @typedef {Object} SAXEventAdaptor~TextToken
+ * @property {&apos;text&apos;} type - Token type
+ * @property {string} text - Text content
+ */
+
+/**
+ * @typedef {SAXEventAdaptor~AttributeToken|SAXEventAdaptor~CDataToken|SAXEventAdaptor~CloseCDataToken|SAXEventAdaptor~CloseNamespaceToken|SAXEventAdaptor~CloseTagToken|SAXEventAdaptor~CommentToken|SAXEventAdaptor~DoctypeToken|SAXEventAdaptor~OpenCDataToken|SAXEventAdaptor~OpenTagToken|SAXEventAdaptor~OpenTagStartToken|SAXEventAdaptor~OpenNamespaceToken|SAXEventAdaptor~ProcessingInstructionToken|SAXEventAdaptor~ScriptToken|SAXEventAdaptor~SGMLDeclarationToken|SAXEventAdaptor~TextToken} SAXEventAdaptor~SAXToken
+ */
+
+/**
+ * EventAdaptor for SAX parser.
+ *
+ * The following events are piped through the stream as tokens
+ *
+ * &lt;ul&gt;
+ *   &lt;li&gt;&lt;b&gt;attribute&lt;/b&gt; - {@link SAXEventAdaptor~AttributeToken}&lt;/li&gt;
+ *   &lt;li&gt;&lt;b&gt;cdata&lt;/b&gt; - {@link SAXEventAdaptor~CDataToken}&lt;/li&gt;
+ *   &lt;li&gt;&lt;b&gt;closecdata&lt;/b&gt; - {@link SAXEventAdaptor~CloseCDataToken}&lt;/li&gt;
+ *   &lt;li&gt;&lt;b&gt;closenamespace&lt;/b&gt; - {@link SAXEventAdaptor~CloseNamespaceToken}&lt;/li&gt;
+ *   &lt;li&gt;&lt;b&gt;closetag&lt;/b&gt; - {@link SAXEventAdaptor~CloseTagToken}&lt;/li&gt;
+ *   &lt;li&gt;&lt;b&gt;comment&lt;/b&gt; - {@link SAXEventAdaptor~CommentToken}&lt;/li&gt;
+ *   &lt;li&gt;&lt;b&gt;doctype&lt;/b&gt; - {@link SAXEventAdaptor~DoctypeToken}&lt;/li&gt;
+ *   &lt;li&gt;&lt;b&gt;opencdata&lt;/b&gt; - {@link SAXEventAdaptor~OpenCDataToken}&lt;/li&gt;
+ *   &lt;li&gt;&lt;b&gt;opentag&lt;/b&gt; - {@link SAXEventAdaptor~OpenTagToken}&lt;/li&gt;
+ *   &lt;li&gt;&lt;b&gt;opentagstart&lt;/b&gt; - {@link SAXEventAdaptor~OpenTagStartToken}&lt;/li&gt;
+ *   &lt;li&gt;&lt;b&gt;opennamespace&lt;/b&gt; - {@link SAXEventAdaptor~OpenNamespaceToken}&lt;/li&gt;
+ *   &lt;li&gt;&lt;b&gt;processinginstruction&lt;/b&gt; - {@link SAXEventAdaptor~ProcessingInstructionToken}&lt;/li&gt;
+ *   &lt;li&gt;&lt;b&gt;script&lt;/b&gt; - {@link SAXEventAdaptor~ScriptToken}&lt;/li&gt;
+ *   &lt;li&gt;&lt;b&gt;sgmldeclaration&lt;/b&gt; - {@link SAXEventAdaptor~SGMLDeclarationToken}&lt;/li&gt;
+ *   &lt;li&gt;&lt;b&gt;text&lt;/b&gt; - {@link SAXEventAdaptor~TextToken}&lt;/li&gt;
+ * &lt;/ul&gt;
+ *
+ * @implements EventAdaptor
+ * @see https://www.npmjs.com/package/sax
+ */
+export default class SAXEventAdaptor extends EventEmitter {
+	/**
+	 * @param {EventEmitter} delegate
+	 */
+	constructor(delegate) {
+		super();
+
+		delegate.on(&quot;attribute&quot;, (token) =&gt; {
+			this.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(token, {
+				type: &quot;attribute&quot;
+			}));
+		});
+
+		delegate.on(&quot;cdata&quot;, (text) =&gt; {
+			this.emit(TokenisingStream.TOKEN_EVENT_NAME, {
+				type: &quot;cdata&quot;,
+				cdata: text
+			});
+		});
+
+		delegate.on(&quot;closecdata&quot;, () =&gt; {
+			this.emit(TokenisingStream.TOKEN_EVENT_NAME, {
+				type: &quot;closecdata&quot;
+			});
+		});
+
+		delegate.on(&quot;closenamespace&quot;, (ns) =&gt; {
+			this.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(ns, {
+				type: &quot;closenamespace&quot;,
+			}));
+		});
+
+		delegate.on(&quot;closetag&quot;, (name) =&gt; {
+			this.emit(TokenisingStream.TOKEN_EVENT_NAME, {
+				type: &quot;closetag&quot;,
+				name
+			});
+		});
+
+		delegate.on(&quot;comment&quot;, (comment) =&gt; {
+			this.emit(TokenisingStream.TOKEN_EVENT_NAME, {
+				type: &quot;comment&quot;,
+				comment: comment
+			});
+		});
+
+		delegate.on(&quot;doctype&quot;, (doctype) =&gt; {
+			this.emit(TokenisingStream.TOKEN_EVENT_NAME, {
+				type: &quot;doctype&quot;,
+				doctype
+			});
+		});
+
+		delegate.on(&quot;opencdata&quot;, () =&gt; {
+			this.emit(TokenisingStream.TOKEN_EVENT_NAME, {
+				type: &quot;opencdata&quot;
+			});
+		});
+
+		delegate.on(&quot;opennamespace&quot;, (ns) =&gt; {
+			this.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(ns, {
+				type: &quot;opennamespace&quot;,
+			}));
+		});
+
+		delegate.on(&quot;opentag&quot;, (node) =&gt; {
+			this.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(node, {
+				type: &quot;opentag&quot;,
+			}));
+		});
+
+		delegate.on(&quot;opentagstart&quot;, (node) =&gt; {
+			this.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(node, {
+				type: &quot;opentagstart&quot;,
+			}));
+		});
+
+		delegate.on(&quot;processinginstruction&quot;, (instruction) =&gt; {
+			this.emit(TokenisingStream.TOKEN_EVENT_NAME, assign2(instruction, {
+				type: &quot;processinginstruction&quot;,
+			}));
+		});
+
+		delegate.on(&quot;script&quot;, (script) =&gt; {
+			this.emit(TokenisingStream.TOKEN_EVENT_NAME, {
+				type: &quot;script&quot;,
+				script: script
+			});
+		});
+
+		delegate.on(&quot;sgmldeclaration&quot;, (sgmldeclaration) =&gt; {
+			this.emit(TokenisingStream.TOKEN_EVENT_NAME, {
+				type: &quot;sgmldeclaration&quot;,
+				sgmldeclaration: sgmldeclaration
+			});
+		});
+
+		delegate.on(&quot;text&quot;, (text) =&gt; {
+			this.emit(TokenisingStream.TOKEN_EVENT_NAME, {
+				type: &quot;text&quot;,
+				text: text
+			});
+		});
+
+		delegate.on(&quot;error&quot;, (error) =&gt; {
+			this.emit(TokenisingStream.ERROR_EVENT_NAME, error);
+		})
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
