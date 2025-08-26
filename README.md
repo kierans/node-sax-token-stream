@@ -27,6 +27,8 @@ This module provides utility functions to create a stream that wraps a `Writable
 representing a parser. Events are captured and written to the stream in a manner which respects
 back-pressure.
 
+API Docs available at https://kierans.github.io/node-sax-token-stream/
+
 Supports:
  - [sax][2]
  - [parse5][3]
@@ -44,7 +46,13 @@ $ npm install <parser-library>
 ```
 
 ```javascript
-// TODO
+import { newSAXStream } from "sax-token-stream";
+
+const input = createInputStream()
+const stream = newSAXStream(sax.createStream(true, { xmlns: true }))
+const output = createOutputStream();
+
+input.pipe(stream).pipe(output);
 ```
 
 ## Tests
